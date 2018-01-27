@@ -35,10 +35,11 @@ class Constants(BaseConstants):
 
 
 class Subsession(BaseSubsession):
-    experimental_room = Constants.online
+    experimental_room = models.IntegerField()
     treatment = models.IntegerField()
 
     def creating_session(self):
+        self.experimental_room = Constants.online
         self.treatment = self.session.config["treatment"]
 
         # creation of pairs of pictures
