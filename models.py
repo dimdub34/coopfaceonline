@@ -2,7 +2,7 @@ from otree.api import (
     models, widgets, BaseConstants, BaseSubsession, BaseGroup, BasePlayer,
     Currency as c, currency_range
 )
-from django.utils.translation import uugettext
+from django.utils.translation import ugettext
 import random
 
 
