@@ -3,72 +3,57 @@
 {% load i18n %}
 
 {% block title %}
-    {% trans "Instructions" %}
+    {% trans "Bievenue à cette expérience en ligne" %}
 {% endblock %}
 
 {% block content %}
+    <hr />
+    <h3>
+        Instructions
+    </h3>
     <p>
         L'expérience à laquelle vous allez participer est destinée à l'étude
         de la prise de décisions. Nous vous demandons de bien vouloir lire
         intégralement les instructions. Ces instructions doivent vous
-        permettre de comprendre l'expérience. Lorsque l'ensemble des
-        participants aura pris connaissance des instructions,
-        un expérimentateur procédera à une relecture à voix haute.
-        Vos gains vont dépendre de vos décisions ainsi que des décisions
-        des autres participants. Toutes vos réponses seront traitées de
-        façon anonyme et seront recueillies au travers d'un réseau
-        informatique. Vous indiquerez vos choix à l'ordinateur devant
-        lequel vous êtes assis et celui-ci vous calculera vos gains
-        réalisés au cours de l'expérience. La somme totale d'argent gagnée
-        pendant l'expérience vous sera versée, en liquide, à la fin de celle-ci.
+        permettre de comprendre l'expérience.
     </p>
     <p>L'expérience comporte deux parties. Les instructions ci-dessous sont
         celles de la partie 1. Vous aurez les instructions de la partie 2
         lorsque la partie 1 sera terminée.
     </p>
 
-    <h2>Partie 1</h2>
-    <h3>Cadre général</h3>
-    <p>
-        Durant l'expérience vos gains seront exprimés en ecus. A la fin de
-        l'expérience, le nombre total d'ecus que vous aurez gagné sera converti
-        en euros selon le taux de conversion donné en fin d'instructions.
-    </p>
-    <p>
-        Au début de l'expérience, l'ordinateur central va composer
-        aléatoirement des groupes de 2 participants. Vous ne pouvez pas
-        identifier l'autre membre de votre groupe, et celui-ci ne peut vous
-        identifier.
-    </p>
     <h3>
-        La décision
+        Partie 1
     </h3>
     <p>
-        Vous disposez d'une dotation de 20 jetons que vous devez répartir
-        entre deux comptes: votre compte individuel et un compte collectif
-        commun aux deux membres du groupe (vous et l'autre membre de votre
-        groupe). Vous devez plus exactement décider du nombre de jetons que
+        Au début de l'expérience l'ordinateur central va former aléatoirement
+        des groupes de deux joueurs. Vous ne pouvez pas identifier l'autre
+        membre de votre groupe et celui-ci ne peut pas vous identifier.
+        Vous disposez d'une dotation de 20 jetons que vous devez entièrement
+        répartir entre deux comptes: votre compte individuel et un compte
+        collectif commun aux deux membres du groupe (vous et l'autre membre de
+        votre groupe). Vous devez plus exactement décider du nombre de jetons que
         vous placez sur le compte collectif. Les jetons restants seront
         automatiquement placés sur votre compte individuel. Vous êtes libre
         de placer, sur le compte collectif, n'importe quel nombre entier de
         jetons compris entre 0 et 20, à savoir 0 jeton, 1 jeton, ..., 19
         jetons ou 20 jetons (votre dotation entière).
     </p>
-    <h3>
-        Fonctionnement des comptes
-    </h3>
     <h4>
-        Votre compte individuel
+        Fonctionnement des comptes
     </h4>
+    <h5>
+        Votre compte individuel
+    </h5>
     <p>
         Chaque jeton placé sur votre compte individuel vous rapporte 1 ecu.
         Ainsi, si vous placez 6 jetons sur votre compte individuel, ce dernier
         vous rapporte 6 ecus. Votre compte individuel ne rapporte des ecus
         qu'à vous seul.
     </p>
-    <h4>
+    <h5>
         Le compte collectif
-    </h4>
+    </h5>
     <p>
         Chaque jeton placé sur le compte collectif rapporte 0.6 ecus à tous
         les membres du groupe. Ainsi, si vous placez 6 jetons sur le compte
@@ -83,16 +68,16 @@
         issu de ce compte pour l'autre membre de votre groupe est aussi
         de 18 ecus.
     </p>
-    <h3>
+    <h4>
         Gain
-    </h3>
+    </h4>
     <p>
         Votre gain est égal à la somme de votre gain issu de votre compte
         individuel et de votre gain issu du compte collectif.
     </p>
-    <h3>
+    <h4>
         Exemple
-    </h3>
+    </h4>
     <p>
         Vous placez 14 jetons sur le compte collectif, et donc 6 jetons
         sur votre compte individuel. Supposons que l'autre membre de votre
@@ -101,16 +86,23 @@
         égal à 6 ecus (compte individuel) + 0.6 x 26 (compte collectif) =
         21.6 ecus.
     </p>
-    <h3>
+    <h4>
         Derniers détails
-    </h3>
+    </h4>
     <p>
         La partie repose sur le principe de décision décrit précédemment.
         Elle ne sera réalisée qu'une seule fois, vous n'aurez donc qu'une
-        décision à prendre. Le taux de conversion des ecus en euros est
-        le suivant: 1 ecu = 0.5€.
+        décision à prendre.
     </p>
 
     {% next_button %}
 
+{% endblock %}
+
+{% block styles %}
+    <style>
+        p {
+            text-align: justify;
+        }
+    </style>
 {% endblock %}

@@ -3,7 +3,7 @@
 {% load i18n %}
 
 {% block title %}
-    {% trans "Instructions - Partie 2" %}
+    {% trans "Partie 2" %}
 {% endblock %}
 
 {% block content %}
@@ -27,14 +27,27 @@
         (compte individuel) + 20x0.6 = 12 ecus, et si vous sélectionnez
         l'individu qui a placé 20 jetons dans le compte collectif votre gain
         sera égal à 0 (compte individuel) + 40x0.6 = 24 ecus.
-
-        Une des 7 interactions sera sélectionnée au hasard à la fin de la
-        partie pour déterminer votre gain pour cette partie.
-        Le taux de conversion des ecus en euros est le suivant: 1 ecu = 0.5€.
     </p>
-    <img src="{% static coopfaceonline/coopface__decision__anonyme.png %}" />
 
+    <p>&nbsp;</p>
+
+    <figure>
+        <figcaption>
+            <strong>Capture de l'écran de décision</strong>
+        </figcaption>
+        <img src="{% static 'coopfaceonline/coopface__decision__anonyme__without_next.png' %}" />
+    </figure>
+
+    <p>&nbsp;</p>
 
     {% next_button %}
 
+{% endblock %}
+
+{% block styles %}
+    <style>
+        p {
+            text-align: justify;
+        }
+    </style>
 {% endblock %}
