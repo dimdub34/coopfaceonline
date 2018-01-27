@@ -1,41 +1,8 @@
 from otree.api import Currency as c, currency_range
+from . import models
 from ._builtin import Page, WaitPage
 from .models import Constants
 from django.utils.translation import gettext
-
-
-class InstructionsPG(Page):
-    def is_displayed(self):
-        return self.round_number == 1
-
-
-class InstructionsCF(Page):
-    def is_displayed(self):
-        return self.round_number == 1
-
-
-class PublicGood(Page):
-    form_model = 'player'
-    form_fields = ['contribution']
-
-    def is_displayed(self):
-        return self.round_number == 1
-
-
-class CoopFace(Page):
-    form_model = 'player'
-    form_fields = ["choice_id"]
-
-    def vars_for_template(self):
-        self.player.coop_id = self.player.participant.vars["cooperators"][self.round_number-1]
-        self.player.noncoop_id = self.player.participant.vars["defectors"][self.round_number-1]
-        self.player.left_is_coop = self.player.participant.vars["left_is_coop"][self.round_number-1]
-        return {
-            "coop_pic": "coopfaceonline/{}.JPG".format(self.player.coop_id),
-            "noncoop_pic": "coopfaceonline/{}.JPG".format(
-                self.player.noncoop_id),
-            "left_is_coop" : self.player.left_is_coop  # just to see it during the demo
-        }
 
 
 class Demographic(Page):
@@ -53,11 +20,113 @@ class Demographic(Page):
                            "your level of study and the displine "
                            "you are studying")
 
+class Final(Page):
+    form_model = "player"
+    form_fields = ["comments"]
 
-class End(Page):
     def is_displayed(self):
         return self.round_number == Constants.num_rounds
 
 
-page_sequence = [InstructionsPG, PublicGood, InstructionsCF, CoopFace,
-                 Demographic, End]
+# ==============================================================================
+#
+# Public goods
+#
+# ==============================================================================
+
+class PGInstructions(Page):
+    def is_displayed(self):
+        return self.round_number == 1
+
+
+class PGDecision(Page):
+    form_model = 'player'
+    form_fields = ['PG_contribution']
+
+    def is_displayed(self):
+        return self.round_number == 1
+
+
+# class PGResultsWaitPage(WaitPage):
+#     wait_for_all_groups = True
+#
+#     def is_displayed(self):
+#         return self.round_number == 1
+#
+#     def after_all_players_arrive(self):
+#         for g in self.subsession.get_groups():
+#             g.pg_set_payoffs()
+#
+#
+# class PGResults(Page):
+#     def is_displayed(self):
+#         return self.round_number == 1
+#
+#
+# class PGEnd(Page):
+#     def is_displayed(self):
+#         return self.round_number == 1
+#
+#     def vars_for_template(self):
+#         return {
+#             "pg_payoff": self.player.PG_payoff.to_real_world_currency(self.session)
+#         }
+
+
+# ==============================================================================
+#
+# Cooperation face
+#
+# ==============================================================================
+
+class CFInstructions(Page):
+    def is_displayed(self):
+        return self.round_number == 1
+
+
+class CFDecision(Page):
+    form_model = 'player'
+    form_fields = ["CF_choice"]
+
+    def vars_for_template(self):
+        self.player.CF_cooperator = \
+            self.player.participant.vars["CF_cooperators"][self.round_number-1]
+        self.player.CF_defector = \
+            self.player.participant.vars["CF_defectors"][self.round_number-1]
+        self.player.CF_cooperator_on_left = \
+            self.player.participant.vars["CF_left_is_coop"][self.round_number-1]
+        return {
+            "coop_pic": "coopfacelab/{}.JPG".format(self.player.CF_cooperator),
+            "noncoop_pic": "coopfacelab/{}.JPG".format(
+                self.player.CF_defector),
+            "left_is_coop" : self.player.CF_cooperator_on_left  # just to see it during the demo
+        }
+
+    def before_next_page(self):
+        for p in self.group.get_players():
+            p.set_cf_period_payoff()
+
+
+# class CFResults(Page):
+#     def is_displayed(self):
+#         return self.round_number == Constants.num_rounds
+#
+#     def vars_for_template(self):
+#         return {"period_selected_for_pay":
+#                     self.player.participant.vars["CF_period_selected_for_pay"]}
+#
+# class CFEnd(Page):
+#     def is_displayed(self):
+#         return self.round_number == Constants.num_rounds
+#
+#     def vars_for_template(self):
+#         return {
+#             "cf_payoff": self.player.CF_payoff.to_real_world_currency(self.session)
+#         }
+
+
+page_sequence = [
+    PGInstructions, PGDecision,
+    CFInstructions, CFDecision,
+    Demographic,
+    Final]

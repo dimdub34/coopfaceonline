@@ -3,7 +3,7 @@
 {% load i18n %}
 
 {% block title %}
-    {% trans "Part 1" %}
+    {% trans "Decision" %}
 {% endblock %}
 
 {% block content %}
@@ -16,7 +16,7 @@
 
     <p>
         {%trans "Please enter the number of tokens you put in the collective account" %}
-        {% formfield player.contribution label="" %}
+        {% formfield player.PG_contribution label="" %}
     </p>
 
     {% next_button %}
