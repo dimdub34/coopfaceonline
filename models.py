@@ -34,6 +34,7 @@ class Constants(BaseConstants):
     online = 1
 
 
+
 class Subsession(BaseSubsession):
     experimental_room = models.IntegerField()
     treatment = models.IntegerField()
@@ -125,7 +126,7 @@ class Player(BasePlayer):
         widget=widgets.RadioSelectHorizontal)
     experience = models.IntegerField(
         choices=[(0, ugettext('No')), (1, ugettext('Yes'))],
-        label=ugettext("Have you ever participated in an experiment?"),
+        label=ugettext("Had you ever participated in an economic experiment?"),
         widget=widgets.RadioSelectHorizontal)
     comments = models.LongStringField(blank=True)
 

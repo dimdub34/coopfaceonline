@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-27 17:48+0100\n"
-"PO-Revision-Date: 2018-01-28 09:59+0100\n"
+"POT-Creation-Date: 2018-01-30 18:56+0100\n"
+"PO-Revision-Date: 2018-01-30 18:57+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -18,164 +18,164 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Poedit 1.8.7.1\n"
 
-#: models.py:86
+#: models.py:87
 msgid "left"
 msgstr "gauche"
 
-#: models.py:86
+#: models.py:87
 msgid "right"
 msgstr "droite"
 
-#: models.py:95
+#: models.py:96
 msgid "What is your age?"
 msgstr "Quel est votre âge?"
 
-#: models.py:98
+#: models.py:99
 msgid "Female"
 msgstr "Femme"
 
-#: models.py:98
+#: models.py:99
 msgid "Male"
 msgstr "Homme"
 
-#: models.py:99
+#: models.py:100
 msgid "What is your gender?"
 msgstr "Quel est votre genre?"
 
-#: models.py:102 models.py:123 models.py:127
+#: models.py:103 models.py:124 models.py:128
 msgid "No"
 msgstr "Non"
 
-#: models.py:102 models.py:123 models.py:127
+#: models.py:103 models.py:124 models.py:128
 msgid "Yes"
 msgstr "Oui"
 
-#: models.py:103
+#: models.py:104
 msgid "Are you a student?"
 msgstr "Êtes-vous étudiant(e)?"
 
-#: models.py:106
+#: models.py:107
 msgid "Bachelor"
 msgstr "Licence"
 
-#: models.py:106
+#: models.py:107
 msgid "Master"
 msgstr "Master"
 
-#: models.py:107
+#: models.py:108
 msgid "PhD"
 msgstr "Doctorat"
 
-#: models.py:107 models.py:119
+#: models.py:108 models.py:120
 msgid "Not in the list"
 msgstr "Pas dans la liste"
 
-#: models.py:111
+#: models.py:112
 msgid "Administration"
 msgstr "Administration"
 
-#: models.py:111
+#: models.py:112
 msgid "Archeology"
 msgstr "Archéologie"
 
-#: models.py:111
+#: models.py:112
 msgid "Biology"
 msgstr "Biologie"
 
-#: models.py:112
+#: models.py:113
 msgid "Buisiness school"
 msgstr "Ecole de commerce"
 
-#: models.py:112
+#: models.py:113
 msgid "Chemistry"
 msgstr "Chimie"
 
-#: models.py:113
+#: models.py:114 tests.py:27
 msgid "Computer science"
 msgstr "Informatique"
 
-#: models.py:113 tests.py:24
+#: models.py:114 tests.py:25
 msgid "Economics"
 msgstr "Economie"
 
-#: models.py:114
+#: models.py:115
 msgid "Education"
 msgstr "Education"
 
-#: models.py:114
+#: models.py:115 tests.py:25
 msgid "Law"
 msgstr "Droit"
 
-#: models.py:114
+#: models.py:115
 msgid "Management"
 msgstr "Gestion"
 
-#: models.py:115
+#: models.py:116
 msgid "Nursing school"
 msgstr "Ecole d'infirmière"
 
-#: models.py:115
+#: models.py:116
 msgid "Engineer"
 msgstr "Ecole d'ingénieur"
 
-#: models.py:115
+#: models.py:116
 msgid "Geography"
 msgstr "Géographie"
 
-#: models.py:116
+#: models.py:117
 msgid "History"
 msgstr "Histoire"
 
-#: models.py:116
+#: models.py:117
 msgid "Lettres"
 msgstr "Lettres"
 
-#: models.py:116
+#: models.py:117
 msgid "Mathematics"
 msgstr "Mathématiques"
 
-#: models.py:117
+#: models.py:118 tests.py:26
 msgid "Medicine"
 msgstr "Médecine"
 
-#: models.py:117
+#: models.py:118
 msgid "Music"
 msgstr "Musique"
 
-#: models.py:117
+#: models.py:118
 msgid "Pharmacy"
 msgstr "Pharmacie"
 
-#: models.py:118
+#: models.py:119
 msgid "Philosophy"
 msgstr "Phylosophie"
 
-#: models.py:118
+#: models.py:119
 msgid "Physics"
 msgstr "Physique"
 
-#: models.py:118
+#: models.py:119
 msgid "Politics"
 msgstr "Sciences politiques"
 
-#: models.py:119
+#: models.py:120
 msgid "Sociology"
 msgstr "Sociologie"
 
-#: models.py:119
+#: models.py:120
 msgid "Sport"
 msgstr "Sport"
 
-#: models.py:121
+#: models.py:122
 msgid "What are you studying?"
 msgstr "Quelle discipline étudiez-vous?"
 
-#: models.py:124
+#: models.py:125
 msgid "Do you pratice (regularly) some sport?"
 msgstr "Pratiquez-vous régulièrement du sport?"
 
-#: models.py:128
-msgid "Have you ever participated in an experiment?"
+#: models.py:129
+msgid "Had you ever participated in an economic experiment?"
 msgstr "Aviez-vous déjà participé à une expérience d'économie?"
 
 #: pages.py:19
@@ -208,7 +208,7 @@ msgid "Which player do you want to interact with?"
 msgstr "Avec quel individu souhaitez-vous interagir?"
 
 #: templates/coopfaceonline/CFInstructions.html:6
-msgid "Partie 2"
+msgid "Part 2"
 msgstr "Partie 2"
 
 #: templates/coopfaceonline/Demographic.html:6
@@ -253,5 +253,8 @@ msgstr ""
 "Veuillez saisir le nombre de jetons que vous placez dans le compte collectif"
 
 #: templates/coopfaceonline/PGInstructions.html:6
-msgid "Bievenue à cette expérience en ligne"
-msgstr "Bienvenue à cette expérience en ligne"
+msgid "Instructions"
+msgstr "Instructions"
+
+#~ msgid "Bievenue à cette expérience en ligne"
+#~ msgstr "Bienvenue à cette expérience en ligne"

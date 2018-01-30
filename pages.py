@@ -2,7 +2,7 @@ from otree.api import Currency as c, currency_range
 from . import models
 from ._builtin import Page, WaitPage
 from .models import Constants
-from django.utils.translation import ugettext
+from django.utils.translation import ugettext, get_language
 
 
 class Demographic(Page):
@@ -37,6 +37,9 @@ class Final(Page):
 class PGInstructions(Page):
     def is_displayed(self):
         return self.round_number == 1
+
+    def vars_for_template(self):
+        return {"instructions_template": "coopfaceonline/PGInstructions_{}.html".format(get_language())}
 
 
 class PGDecision(Page):
@@ -82,6 +85,9 @@ class PGDecision(Page):
 class CFInstructions(Page):
     def is_displayed(self):
         return self.round_number == 1
+
+    def vars_for_template(self):
+        return {"instructions_template": "coopfaceonline/CFInstructions_{}.html".format(get_language())}
 
 
 class CFDecision(Page):
