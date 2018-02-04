@@ -113,14 +113,14 @@ class CFDecision(Page):
             p.set_cf_period_payoff()
 
 
-# class CFResults(Page):
-#     def is_displayed(self):
-#         return self.round_number == Constants.num_rounds
-#
-#     def vars_for_template(self):
-#         return {"period_selected_for_pay":
-#                     self.player.participant.vars["CF_period_selected_for_pay"]}
-#
+class CFResults(Page):
+    def is_displayed(self):
+        return self.round_number == Constants.num_rounds
+
+    def vars_for_template(self):
+        return {"period_selected_for_pay":
+                    self.player.participant.vars["CF_period_selected_for_pay"]}
+
 # class CFEnd(Page):
 #     def is_displayed(self):
 #         return self.round_number == Constants.num_rounds
@@ -133,6 +133,6 @@ class CFDecision(Page):
 
 page_sequence = [
     PGInstructions, PGDecision,
-    CFInstructions, CFDecision,
+    CFInstructions, CFDecision, CFResults,
     Demographic,
     Final]

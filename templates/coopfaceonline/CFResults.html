@@ -1,0 +1,44 @@
+{% extends "global/Page.html" %}
+{% load staticfiles otree %}
+{% load i18n %}
+
+{% block title %}
+    {% trans "Summary" %}
+{% endblock %}
+
+{% block content %}
+
+    <table class="table">
+        <tr>
+            <th>{% trans "Round" %}</th>
+            <th>{% trans "Tokens put by" %} <br>{% trans "selected player" %}</th>
+            <th>{% trans "Your payoff" %}</th>
+        </tr>
+        {% for p in player.in_all_rounds %}
+            <tr>
+                <td>{{ p.round_number }}</td>
+                <td>{% if p.CF_choose_cooperator %} {{ Constants.endowment }} {% else %} 0 {% endif %}</td>
+                <td>{{ p.CF_payoff }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
+    <p>
+        {% blocktrans with question=CF_period_selected_for_pay %}
+        This is your choice at question {{ question }} that has been selected.
+        The player you've selected put
+        {% endblocktrans %}
+        {% if CF_choose_cooperator %}
+            {{Constants.endowment}} {% trans "tokens" %}
+        {% else %}
+            {% trans "0 token" %}
+        {% endif %}
+        {% trans "in the collective account." %}
+        {% trans "Your payoff is equal to " %} {{ player.CF_payoff }}.
+    </p>
+
+    {% next_button %}
+
+{% endblock %}
+
+
