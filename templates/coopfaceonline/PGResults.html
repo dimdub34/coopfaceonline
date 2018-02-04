@@ -1,0 +1,25 @@
+{% extends "global/Page.html" %}
+{% load staticfiles otree %}
+{% load i18n %}
+
+{% block title %}
+    {%trans "Results" %}
+{% endblock %}
+
+{% block content %}
+
+    <p>
+        {% blocktrans with endowment=Constants.endowment %}
+        You started with an endowment of {{ endowment }} tokens.
+        {% endblocktrans %}
+        {% blocktrans with contrib=player.PG_contribution contrib_group=group.PG_group_contribution %}
+        You put {{ contrib }} token(s) in the collective account.
+        {% endblocktrans %}
+        {% blocktrans %}
+        Your payoff will be computed at the end of this online experiment. At this time you will be paired to another participant.
+        {% endblocktrans %}
+    </p>
+
+    {% next_button %}
+
+{% endblock %}

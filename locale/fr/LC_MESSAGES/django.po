@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-30 18:56+0100\n"
-"PO-Revision-Date: 2018-01-30 18:57+0100\n"
+"POT-Creation-Date: 2018-02-04 22:46+0100\n"
+"PO-Revision-Date: 2018-02-04 22:50+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -211,6 +211,56 @@ msgstr "Avec quel individu souhaitez-vous interagir?"
 msgid "Part 2"
 msgstr "Partie 2"
 
+#: templates/coopfaceonline/CFResults.html:6
+#: templates/coopfaceonline/PGResults.html:6
+msgid "Results"
+msgstr "Résultats"
+
+#: templates/coopfaceonline/CFResults.html:13
+msgid "Question"
+msgstr "Question"
+
+#: templates/coopfaceonline/CFResults.html:14
+msgid "Tokens put by"
+msgstr "Jetons placés par"
+
+#: templates/coopfaceonline/CFResults.html:14
+msgid "selected player"
+msgstr "le joueur sélectionné"
+
+#: templates/coopfaceonline/CFResults.html:15
+msgid "Your payoff"
+msgstr "Votre gain"
+
+#: templates/coopfaceonline/CFResults.html:27
+#, python-format
+msgid ""
+"\n"
+"        This is your choice at question %(question)s that has been "
+"selected.\n"
+"        The player you've selected put\n"
+"        "
+msgstr ""
+"\n"
+"C'est votre choix à la question %(question)s qui a été tiré au sort.\n"
+"Le joueur que vous avez sélectionné a placé"
+
+#: templates/coopfaceonline/CFResults.html:32
+msgid "tokens"
+msgstr "jetons"
+
+#: templates/coopfaceonline/CFResults.html:34
+msgid "0 token"
+msgstr "0 jeton"
+
+#: templates/coopfaceonline/CFResults.html:36
+msgid "in the collective account."
+msgstr "dans le compte collectif"
+
+#: templates/coopfaceonline/CFResults.html:37
+msgid "Your payoff is equal to "
+msgstr "Votre gain est de "
+
 #: templates/coopfaceonline/Demographic.html:6
 msgid "Final questionnaire"
 msgstr "Questionnaire final"
@@ -228,12 +278,12 @@ msgstr "Fin de l'expérience"
 msgid "The experiment is over. Thank you for your participation. "
 msgstr "L'expérience est terminée. Merci pour votre participation."
 
-#: templates/coopfaceonline/Final.html:15
+#: templates/coopfaceonline/Final.html:18
 msgid "You can write some comments about the experiment below"
 msgstr ""
 "Vous pouvez écrire des commentaires sur l'expérience dans la zone ci-dessous."
 
-#: templates/coopfaceonline/Final.html:19
+#: templates/coopfaceonline/Final.html:22
 msgid "Save"
 msgstr "Enregistrer"
 
@@ -255,6 +305,37 @@ msgstr ""
 #: templates/coopfaceonline/PGInstructions.html:6
 msgid "Instructions"
 msgstr "Instructions"
+
+#: templates/coopfaceonline/PGResults.html:12
+#, python-format
+msgid ""
+"\n"
+"        You started with an endowment of %(endowment)s tokens.\n"
+"        "
+msgstr ""
+"\n"
+"Vous disposiez d'une dotation de %(endowment)s jetons."
+
+#: templates/coopfaceonline/PGResults.html:15
+#, python-format
+msgid ""
+"\n"
+"        You put %(contrib)s token(s) in the collective account.\n"
+"        "
+msgstr ""
+"\n"
+"Vous avez placé %(contrib)s jetons dans le compte collectif."
+
+#: templates/coopfaceonline/PGResults.html:18
+msgid ""
+"\n"
+"        Your payoff will be computed at the end of this online experiment. "
+"At this time you will be paired to another participant.\n"
+"        "
+msgstr ""
+"\n"
+"Votre gain sera calculé à la fin de cette expérience en ligne. A ce moment "
+"là vous serez apparié(e) à un autre participant."
 
 #~ msgid "Bievenue à cette expérience en ligne"
 #~ msgstr "Bienvenue à cette expérience en ligne"

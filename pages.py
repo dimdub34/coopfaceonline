@@ -50,30 +50,9 @@ class PGDecision(Page):
         return self.round_number == 1
 
 
-# class PGResultsWaitPage(WaitPage):
-#     wait_for_all_groups = True
-#
-#     def is_displayed(self):
-#         return self.round_number == 1
-#
-#     def after_all_players_arrive(self):
-#         for g in self.subsession.get_groups():
-#             g.pg_set_payoffs()
-#
-#
-# class PGResults(Page):
-#     def is_displayed(self):
-#         return self.round_number == 1
-#
-#
-# class PGEnd(Page):
-#     def is_displayed(self):
-#         return self.round_number == 1
-#
-#     def vars_for_template(self):
-#         return {
-#             "pg_payoff": self.player.PG_payoff.to_real_world_currency(self.session)
-#         }
+class PGResults(Page):
+    def is_displayed(self):
+        return self.round_number == 1
 
 
 # ==============================================================================
@@ -118,21 +97,11 @@ class CFResults(Page):
         return self.round_number == Constants.num_rounds
 
     def vars_for_template(self):
-        return {"period_selected_for_pay":
+        return {"CF_period_selected_for_pay":
                     self.player.participant.vars["CF_period_selected_for_pay"]}
-
-# class CFEnd(Page):
-#     def is_displayed(self):
-#         return self.round_number == Constants.num_rounds
-#
-#     def vars_for_template(self):
-#         return {
-#             "cf_payoff": self.player.CF_payoff.to_real_world_currency(self.session)
-#         }
 
 
 page_sequence = [
-    PGInstructions, PGDecision,
+    PGInstructions, PGDecision, PGResults,
     CFInstructions, CFDecision, CFResults,
-    Demographic,
-    Final]
+    Demographic, Final]
