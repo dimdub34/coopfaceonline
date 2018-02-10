@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-04 22:46+0100\n"
-"PO-Revision-Date: 2018-02-04 22:50+0100\n"
+"POT-Creation-Date: 2018-02-10 07:23+0100\n"
+"PO-Revision-Date: 2018-02-10 07:23+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -275,15 +275,22 @@ msgid "End of the experiment"
 msgstr "Fin de l'expérience"
 
 #: templates/coopfaceonline/Final.html:11
-msgid "The experiment is over. Thank you for your participation. "
+msgid "The experiment is over. Thank you for your participation."
 msgstr "L'expérience est terminée. Merci pour votre participation."
 
-#: templates/coopfaceonline/Final.html:18
+#: templates/coopfaceonline/Final.html:14
+msgid ""
+"Your final payoff will we computed at the end of this online experiment."
+msgstr ""
+"Votre gain sera calculé à la fin de cette expérience en ligne. A ce moment "
+"là vous serez apparié(e) à un autre participant."
+
+#: templates/coopfaceonline/Final.html:17
 msgid "You can write some comments about the experiment below"
 msgstr ""
 "Vous pouvez écrire des commentaires sur l'expérience dans la zone ci-dessous."
 
-#: templates/coopfaceonline/Final.html:22
+#: templates/coopfaceonline/Final.html:21
 msgid "Save"
 msgstr "Enregistrer"
 
