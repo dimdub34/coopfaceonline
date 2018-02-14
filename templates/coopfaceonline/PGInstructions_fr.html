@@ -1,3 +1,5 @@
+{% load staticfiles otree %}
+
     <p>
         L'expérience à laquelle vous allez participer est destinée à l'étude
         de la prise de décisions. Nous vous demandons de bien vouloir lire
@@ -78,12 +80,18 @@
         égal à 6 ecus (compte individuel) + 0.6 x 26 (compte collectif) =
         21.6 ecus.
     </p>
+
+    <video controls src="{% static 'coopfaceonline/coopface_video.m4v' %}">
+        Votre navigateur ne permet pas de lire la vidéo.
+    </video>
+
     <p>&nbsp;</p>
+
     <h4>
         Derniers détails
     </h4>
     <p>
-        Vous n'aurez donc qu'une décision à prendre. <br>
+        Vous n'aurez qu'une décision à prendre. <br>
         Vous et les autres participants à l'expérience allez prendre votre
         décision de manière indépendantes les uns des autres. Lorsque toutes
         les décisions auront été prises et l'expérience terminée, l'ordinateur
