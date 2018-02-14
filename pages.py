@@ -97,8 +97,12 @@ class CFResults(Page):
         return self.round_number == Constants.num_rounds
 
     def vars_for_template(self):
-        return {"CF_period_selected_for_pay":
-                    self.player.participant.vars["CF_period_selected_for_pay"]}
+        selected_period = self.player.participant.vars["CF_period_selected_for_pay"]
+        cf_choose_cooperator = self.player.in_round(selected_period).CF_choose_cooperator
+        return {
+            "CF_period_selected_for_pay": selected_period,
+            "CF_choose_cooperator": cf_choose_cooperator
+        }
 
 
 page_sequence = [
