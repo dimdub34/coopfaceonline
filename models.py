@@ -34,7 +34,6 @@ class Constants(BaseConstants):
     online = 1
 
 
-
 class Subsession(BaseSubsession):
     experimental_room = models.IntegerField()
     treatment = models.IntegerField()

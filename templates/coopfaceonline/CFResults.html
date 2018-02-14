@@ -25,8 +25,9 @@
 
     <p>
         {% blocktrans with question=CF_period_selected_for_pay %}
-        This is your choice at question {{ question }} that has been selected.
-        The player you've selected put
+        This is interaction {{ question }} that has been randomly selected for
+        your payoff of this part of the experiment. The player you've selected
+        put
         {% endblocktrans %}
         {% if CF_choose_cooperator %}
             {{Constants.endowment}} {% trans "tokens" %}
