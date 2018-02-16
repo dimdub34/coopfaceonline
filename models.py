@@ -58,27 +58,24 @@ class Subsession(BaseSubsession):
 class Group(BaseGroup):
     PG_group_contribution = models.IntegerField()
 
-    # def pg_set_payoffs(self):
-    #     self.PG_group_contribution = sum([p.PG_contribution for p in self.get_players()])
-    #     payoff_coll_account = float("{:.2f}".format(self.PG_group_contribution * Constants.mpcr))
-    #     for p in self.get_players():
-    #         p.PG_payoff_collective_account = payoff_coll_account
-    #         p.PG_payoff_individual_account = Constants.endowment - p.PG_contribution
-    #         p.PG_payoff = p.PG_payoff_individual_account + p.PG_payoff_collective_account
-    #         p.payoff = p.PG_payoff
-    #         p.participant.vars["pg_payoff"] = p.PG_payoff
-
 
 class Player(BasePlayer):
+
     deaf = models.IntegerField()
 
+    # --------------------------------------------------------------------------
     # public goods
+    # --------------------------------------------------------------------------
+
     PG_contribution = models.IntegerField()
     PG_payoff_individual_account = models.FloatField()
     PG_payoff_collective_account = models.FloatField()
     PG_payoff = models.CurrencyField()
 
+    # --------------------------------------------------------------------------
     # Cooperation face
+    # --------------------------------------------------------------------------
+
     CF_cooperator = models.StringField()
     CF_defector = models.StringField()
     CF_cooperator_on_left = models.BooleanField()
@@ -90,7 +87,10 @@ class Player(BasePlayer):
     CF_period_selected_for_pay = models.BooleanField()
     CF_payoff = models.CurrencyField()
 
+    # --------------------------------------------------------------------------
     # Demographic
+    # --------------------------------------------------------------------------
+
     age = models.IntegerField(
         label=ugettext('What is your age?'),
         min=13, max=125)
@@ -105,7 +105,7 @@ class Player(BasePlayer):
     student_level = models.IntegerField(
         choices=[(0, ugettext('Bachelor')), (1, ugettext('Master')),
                  (2, ugettext('PhD')), (3, ugettext('Not in the list'))],
-        blank=True)
+        label=ugettext("What is your level of study"), blank=True)
     student_discipline = models.StringField(
         choices=[
             ugettext("Administration"), ugettext("Archeology"), ugettext("Biology"),
@@ -130,20 +130,27 @@ class Player(BasePlayer):
     comments = models.LongStringField(blank=True)
 
     def set_cf_period_payoff(self):
-        if not self.CF_cooperator_on_left:  # defector on the left on the screen
+        """
+        called at the end of each period
+        :return:
+        """
+        # determine whether the subject found the cooperator
+        if not self.CF_cooperator_on_left:
             self.CF_choose_cooperator = True if self.CF_choice == 1 else False
-        else:  # cooperator on the left side of pictures
+        else:
             self.CF_choose_cooperator = True if self.CF_choice == 0 else False
 
-        # payoff depending on whether he choosed the cooperator
+        # payoff depending on whether he found or not the cooperator
         self.CF_payoff = Constants.endowment * 2 * Constants.mpcr if \
             self.CF_choose_cooperator else Constants.endowment * Constants.mpcr
 
+        # set whether the current period is the period that will be paid
         if self.round_number == self.participant.vars["CF_period_selected_for_pay"]:
             self.CF_period_selected_for_pay = True
         else:
             self.CF_period_selected_for_pay = False
 
+        # if last rount
         if self.round_number == Constants.num_rounds:
             # compute the number of "good" answer
             self.CF_number_of_cooperators_found = sum(
@@ -153,5 +160,3 @@ class Player(BasePlayer):
                 [p.CF_payoff for p in self.in_all_rounds() if
                  p.CF_period_selected_for_pay])
             self.participant.vars["cf_payoff"] = self.CF_payoff
-            # self.participant.payoff = \
-            #     self.participant.vars["pg_payoff"] + self.CF_payoff
