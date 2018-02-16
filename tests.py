@@ -12,9 +12,11 @@ class PlayerBot(Bot):
         if self.round_number == 1:
             yield (pages.PGInstructions)
             yield (pages.PGDecision, {"PG_contribution": random.randint(0, Constants.endowment)})
+            yield (pages.PGResults)
             yield (pages.CFInstructions)
         yield (pages.CFDecision, {"CF_choice": random.randint(0, 1)})
         if self.round_number == Constants.num_rounds:
+            yield (pages.CFResults)
             yield (pages.Demographic,
                    {
                        "age": random.randint(15, 90),
