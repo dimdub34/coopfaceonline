@@ -40,7 +40,7 @@ class Subsession(BaseSubsession):
 
     def creating_session(self):
         self.experimental_room = Constants.online
-        self.treatment = Constants.no_deaf
+        self.treatment = self.session.config["treatment"]
 
         # creation of pairs of pictures
         if self.round_number == 1:

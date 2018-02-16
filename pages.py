@@ -40,7 +40,10 @@ class PGInstructions(Page):
         return self.round_number == 1
 
     def vars_for_template(self):
-        return {"instructions_template": "coopfaceonline/PGInstructions_{}.html".format(get_language())}
+        return {
+            "convertion_rate": self.session.config[
+                "real_world_currency_per_point"],
+            "instructions_template": "coopfaceonline/PGInstructions_{}.html".format(get_language())}
 
 
 class PGDecision(Page):
@@ -67,7 +70,9 @@ class CFInstructions(Page):
         return self.round_number == 1
 
     def vars_for_template(self):
-        return {"instructions_template": "coopfaceonline/CFInstructions_{}.html".format(get_language())}
+        return {
+            "convertion_rate": self.session.config["real_world_currency_per_point"],
+            "instructions_template": "coopfaceonline/CFInstructions_{}.html".format(get_language())}
 
 
 class CFDecision(Page):
