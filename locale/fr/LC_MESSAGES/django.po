@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-15 15:06+0100\n"
-"PO-Revision-Date: 2018-02-15 15:10+0100\n"
+"POT-Creation-Date: 2018-02-16 21:56+0100\n"
+"PO-Revision-Date: 2018-02-16 21:57+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -18,11 +18,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Poedit 1.8.7.1\n"
 
-#: models.py:86
+#: models.py:83
 msgid "left"
 msgstr "gauche"
 
-#: models.py:86
+#: models.py:83
 msgid "right"
 msgstr "droite"
 
@@ -70,6 +70,10 @@ msgstr "Doctorat"
 msgid "Not in the list"
 msgstr "Pas dans la liste"
 
+#: models.py:108
+msgid "What is your level of study"
+msgstr "Quel est votre niveau d'étude?"
+
 #: models.py:111
 msgid "Administration"
 msgstr "Administration"
@@ -90,11 +94,11 @@ msgstr "Ecole de commerce"
 msgid "Chemistry"
 msgstr "Chimie"
 
-#: models.py:113 tests.py:27
+#: models.py:113 tests.py:29
 msgid "Computer science"
 msgstr "Informatique"
 
-#: models.py:113 tests.py:25
+#: models.py:113 tests.py:27
 msgid "Economics"
 msgstr "Economie"
 
@@ -102,7 +106,7 @@ msgstr "Economie"
 msgid "Education"
 msgstr "Education"
 
-#: models.py:114 tests.py:25
+#: models.py:114 tests.py:27
 msgid "Law"
 msgstr "Droit"
 
@@ -134,7 +138,7 @@ msgstr "Lettres"
 msgid "Mathematics"
 msgstr "Mathématiques"
 
-#: models.py:117 tests.py:26
+#: models.py:117 tests.py:28
 msgid "Medicine"
 msgstr "Médecine"
 
@@ -217,8 +221,8 @@ msgid "Results"
 msgstr "Résultats"
 
 #: templates/coopfaceonline/CFResults.html:13
-msgid "Question"
-msgstr "Question"
+msgid "Interaction"
+msgstr "Interaction"
 
 #: templates/coopfaceonline/CFResults.html:14
 msgid "Tokens put by"
@@ -353,6 +357,9 @@ msgstr ""
 "là vous serez apparié(e) à un autre participant pour déterminer le nombre "
 "total de jetons placés dans le compte collectif et ainsi calculer votre gain "
 "pour cette partie de l'expérience."
+
+#~ msgid "Question"
+#~ msgstr "Question"
 
 #~ msgid "Bievenue à cette expérience en ligne"
 #~ msgstr "Bienvenue à cette expérience en ligne"
