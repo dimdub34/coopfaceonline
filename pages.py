@@ -20,6 +20,7 @@ class Demographic(Page):
                            "your level of study and the displine "
                            "you are studying")
 
+
 class Final(Page):
     form_model = "player"
     form_fields = ["comments"]
@@ -81,8 +82,8 @@ class CFDecision(Page):
         self.player.CF_cooperator_on_left = \
             self.player.participant.vars["CF_left_is_coop"][self.round_number-1]
         return {
-            "coop_pic": "coopfacelab/{}.JPG".format(self.player.CF_cooperator),
-            "noncoop_pic": "coopfacelab/{}.JPG".format(
+            "coop_pic": "coopfaceonline/{}.JPG".format(self.player.CF_cooperator),
+            "noncoop_pic": "coopfaceonline/{}.JPG".format(
                 self.player.CF_defector),
             "left_is_coop" : self.player.CF_cooperator_on_left  # just to see it during the demo
         }
