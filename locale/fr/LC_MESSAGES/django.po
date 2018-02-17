@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-17 19:04+0100\n"
-"PO-Revision-Date: 2018-02-17 12:27+0100\n"
+"POT-Creation-Date: 2018-02-17 23:24+0100\n"
+"PO-Revision-Date: 2018-02-17 23:35+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -18,179 +18,175 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Poedit 1.8.7.1\n"
 
-#: models.py:91
+#: models.py:89
 msgid "left"
 msgstr "gauche"
 
-#: models.py:91
+#: models.py:89
 msgid "right"
 msgstr "droite"
 
-#: models.py:104
+#: models.py:102
 msgid "What nationality are you?"
-msgstr ""
+msgstr "Quelle est votre nationalité?"
 
-#: models.py:146
+#: models.py:144
 msgid "How old are you?"
-msgstr ""
+msgstr "Quel âge avez-vous?"
 
-#: models.py:149
+#: models.py:147
 msgid "Female"
 msgstr "Femme"
 
-#: models.py:149
+#: models.py:147
 msgid "Male"
 msgstr "Homme"
 
-#: models.py:150
+#: models.py:148
 msgid "What is your gender?"
 msgstr "Quel est votre genre?"
 
-#: models.py:153 models.py:174
+#: models.py:151 models.py:172
 msgid "No"
 msgstr "Non"
 
-#: models.py:153 models.py:174
+#: models.py:151 models.py:172
 msgid "Yes"
 msgstr "Oui"
 
-#: models.py:154
+#: models.py:152
 msgid "Are you a student?"
 msgstr "Êtes-vous étudiant(e)?"
 
-#: models.py:157
+#: models.py:155
 msgid "Bachelor"
 msgstr "Licence"
 
-#: models.py:157
+#: models.py:155
 msgid "Master"
 msgstr "Master"
 
-#: models.py:158
+#: models.py:156
 msgid "PhD"
 msgstr "Doctorat"
 
-#: models.py:158 models.py:170
+#: models.py:156 models.py:168
 msgid "Not in the list"
 msgstr "Pas dans la liste"
 
-#: models.py:159
+#: models.py:157
 msgid "What is your level of study"
 msgstr "Quel est votre niveau d'étude?"
 
-#: models.py:162
+#: models.py:160
 msgid "Administration"
 msgstr "Administration"
 
-#: models.py:162
+#: models.py:160
 msgid "Archeology"
 msgstr "Archéologie"
 
-#: models.py:162
+#: models.py:160
 msgid "Biology"
 msgstr "Biologie"
 
-#: models.py:163
+#: models.py:161
 msgid "Buisiness school"
 msgstr "Ecole de commerce"
 
-#: models.py:163
+#: models.py:161
 msgid "Chemistry"
 msgstr "Chimie"
 
-#: models.py:164 tests.py:29
+#: models.py:162 tests.py:29
 msgid "Computer science"
 msgstr "Informatique"
 
-#: models.py:164 tests.py:27
+#: models.py:162 tests.py:27
 msgid "Economics"
 msgstr "Economie"
 
-#: models.py:165
+#: models.py:163
 msgid "Education"
 msgstr "Education"
 
-#: models.py:165 tests.py:27
+#: models.py:163 tests.py:27
 msgid "Law"
 msgstr "Droit"
 
-#: models.py:165
+#: models.py:163
 msgid "Management"
 msgstr "Gestion"
 
-#: models.py:166
+#: models.py:164
 msgid "Nursing school"
 msgstr "Ecole d'infirmière"
 
-#: models.py:166
+#: models.py:164
 msgid "Engineer"
 msgstr "Ecole d'ingénieur"
 
-#: models.py:166
+#: models.py:164
 msgid "Geography"
 msgstr "Géographie"
 
-#: models.py:167
+#: models.py:165
 msgid "History"
 msgstr "Histoire"
 
-#: models.py:167
+#: models.py:165
 msgid "Lettres"
 msgstr "Lettres"
 
-#: models.py:167
+#: models.py:165
 msgid "Mathematics"
 msgstr "Mathématiques"
 
-#: models.py:168 tests.py:28
+#: models.py:166 tests.py:28
 msgid "Medicine"
 msgstr "Médecine"
 
-#: models.py:168
+#: models.py:166
 msgid "Music"
 msgstr "Musique"
 
-#: models.py:168
+#: models.py:166
 msgid "Pharmacy"
 msgstr "Pharmacie"
 
-#: models.py:169
+#: models.py:167
 msgid "Philosophy"
 msgstr "Phylosophie"
 
-#: models.py:169
+#: models.py:167
 msgid "Physics"
 msgstr "Physique"
 
-#: models.py:169
+#: models.py:167
 msgid "Politics"
 msgstr "Sciences politiques"
 
-#: models.py:170
+#: models.py:168
 msgid "Sociology"
 msgstr "Sociologie"
 
-#: models.py:170
+#: models.py:168
 msgid "Sport"
 msgstr "Sport"
 
-#: models.py:172
+#: models.py:170
 msgid "What are you studying?"
 msgstr "Quelle discipline étudiez-vous?"
 
-#: models.py:175
+#: models.py:173
 msgid "Do you benefit from a scholarship?"
-msgstr ""
+msgstr "Bénéficiez-vous d'une bourse?"
 
 #: pages.py:23
-#, fuzzy
-#| msgid ""
-#| "If you are a student you must select your level of study and the displine "
-#| "you are studying"
 msgid "If you are a student you must tell if you benefit from a scholarship."
 msgstr ""
-"Si vous êtes étudiant(e), vous devez préciser votre niveau d'études et la "
-"discipline que vous étudiez"
+"Si vous êtes étudiant(e), vous devez préciser si vous bénéficiez ou non "
+"d'une bourse."
 
 #: templates/coopfaceonline/CFDecision.html:6
 #: templates/coopfaceonline/PGDecision.html:6
@@ -268,7 +264,7 @@ msgstr "dans le compte collectif"
 
 #: templates/coopfaceonline/CFResults.html:38
 msgid "Your payoff for this part, if you are selected to be paid, is equal to "
-msgstr ""
+msgstr "Votre gain pour cette partie, si vous êtes sélectionné(e), est de "
 
 #: templates/coopfaceonline/Demographic.html:6
 msgid "Final questionnaire"
@@ -288,17 +284,6 @@ msgid "The experiment is over. Thank you for your participation."
 msgstr "L'expérience est terminée. Merci pour votre participation."
 
 #: templates/coopfaceonline/Final.html:14
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "        Your payoff will be computed at the end of this online "
-#| "experiment. At\n"
-#| "        this time you will be paired to another participant to determine "
-#| "the\n"
-#| "        total number of tokens placed in the collective account and "
-#| "therefore\n"
-#| "        to compute your payoff for this part of the experiment.\n"
-#| "        "
 msgid ""
 "\n"
 "        Your final payoff will we computed at the end of this online "
@@ -312,9 +297,9 @@ msgid ""
 msgstr ""
 "\n"
 "Votre gain sera calculé à la fin de cette expérience en ligne. A ce moment "
-"là vous serez apparié(e) à un autre participant pour déterminer le nombre "
-"total de jetons placés dans le compte collectif et ainsi calculer votre gain "
-"pour cette partie de l'expérience."
+"là vous serez apparié(e) à un autre participant. Si vous êtes sélectionné(e) "
+"pour être payé(e) pour cette expérience vous recevrez un emai vous informant "
+"de votre gain pour les deux parties et de la procédure pour le récupérer."
 
 #: templates/coopfaceonline/Final.html:22
 msgid "You can write some comments about the experiment below"
@@ -351,6 +336,21 @@ msgid ""
 "\n"
 "        "
 msgstr ""
+"\n"
+"\n"
+"Vous diposez d'une dotation de %(endowment)s jetons. Vous devez décider de "
+"comment vous répartissez ces %(endowment)s jetons entre votre compte "
+"individuel et le compte collectif commun aux membres de votre groupe.\n"
+"<br><br>\n"
+"Chaque jeton que vous placez dans votre compte individuel vous rapporte 1 "
+"ecu, et chaque jeton que vous placez dans le compte collectif vous rapporte "
+"%(mpcr)s ecu et également à chaque membre de votre groupe (le nombre total "
+"de jetons placés dans le compte collectif est multiplié par %(multiplier)s "
+"et divisé en deux parts égales.\n"
+"<br><br>\n"
+"Vous devez saisir le nombre de jetons que vous placez dans le compte "
+"collectif, le reste sera automatiquement placé sur votre compte individuel "
+"pour l'ordinateur."
 
 #: templates/coopfaceonline/PGDecision.html:32
 msgid "Please enter the number of tokens you put in the collective account"
@@ -401,7 +401,7 @@ msgstr ""
 
 #: templates/coopfaceonline/Welcome.html:6
 msgid "Welcome"
-msgstr ""
+msgstr "Bienvenue"
 
 #: templates/coopfaceonline/Welcome.html:16
 msgid ""
@@ -410,6 +410,10 @@ msgid ""
 "\n"
 "        "
 msgstr ""
+"\n"
+"\tBienvenue à cette expérience en ligne!<br>\n"
+"\n"
+"  "
 
 #~ msgid "What is your age?"
 #~ msgstr "Quel est votre âge?"

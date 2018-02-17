@@ -19,10 +19,10 @@ class Constants(BaseConstants):
 
     # parameters
     endowment = 20
+    mpcr = 0.6
     cooperators = ["1_201016", "11_120117", "11_160117", "17_090117", "5_120117", "7_090117", "7_171016"]
     defectors = ["1_081116", "1_130117", "1_181016", "11_090117", "13_090117", "15_211016", "5_171016"]
     num_rounds = len(cooperators)
-    mpcr = 0.6  # set by creation_creation in the subsession class
 
     # codes
     defector = 0
@@ -42,13 +42,11 @@ class Subsession(BaseSubsession):
     experimental_room = models.IntegerField()
     treatment = models.IntegerField()
     multiplier = models.FloatField()
-    mpcr = models.FloatField()
 
     def creating_session(self):
         self.experimental_room = Constants.online
         self.treatment = self.session.config["treatment"]
-        self.multiplier = self.session.config["multiplier"]
-        self.mpcr = self.multiplier / 2
+        self.multiplier = Constants.mpcr * 2
 
         # creation of pairs of pictures
         if self.round_number == 1:
@@ -188,9 +186,9 @@ class Player(BasePlayer):
             self.CF_choose_cooperator = True if self.CF_choice == 0 else False
 
         # payoff depending on whether he found or not the cooperator
-        self.CF_payoff = Constants.endowment * 2 * self.subsession.mpcr if \
+        self.CF_payoff = Constants.endowment * 2 * Constants.mpcr if \
             self.CF_choose_cooperator else Constants.endowment * \
-                                           self.subsession.mpcr
+                                           Constants.mpcr
 
         # set whether the current period is the period that will be paid
         if self.round_number == self.participant.vars["CF_period_selected_for_pay"]:
