@@ -21,24 +21,20 @@
 
 {% block scripts %}
     <script>
-        /* we disabled the student_level and student_discipline combobox
+        /* we disabled the student_scholarship combobox
         if the subject is not a student */
         window.onload = function() {
-            var combo_discipline = $("#id_student_discipline");
-            combo_discipline.prop("disabled", true);
-            var combo_student_level = $("#id_student_level");
-            combo_student_level.prop("disabled", true);
+            var combo_scholarship = $("#id_student_scholarshi");
+            combo_scholarship.prop("disabled", true);
             var student_no = $("#id_student_0");
             student_no.click(function(){
-                combo_discipline.val("");
-                combo_discipline.prop("disabled", true);
-                combo_student_level.val("");
-                combo_student_level.prop("disabled", true);
+                combo_scholarship.val("");
+                combo_scholarship.prop("disabled", true);
             });
             var student_yes = $("#id_student_1");
             student_yes.click(function(){
-                combo_student_level.prop("disabled", false);
-                combo_discipline.prop("disabled", false);
+                combo_scholarship.prop("disabled", false);
+                combo_scholarship.prop("disabled", false);
             });
         }
     </script>

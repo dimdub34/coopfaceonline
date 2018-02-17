@@ -8,10 +8,15 @@
 
 {% block content %}
 
-    <p>{% trans "The experiment is over. Thank you for your participation." %}.</p>
+    <p>{% trans "The experiment is over. Thank you for your participation." %}</p>
 
     <p>
-        {% trans "Your final payoff will we computed at the end of this online experiment." %}
+        {% blocktrans %}
+        Your final payoff will we computed at the end of this online experiment.
+        At this time you will be paired to another participant. If you are selected
+        to be paid for this experiment you will receive an email informing you
+        about your payoff for both parts and how you can collect it.
+        {% endblocktrans %}
     </p>
     <p>
         {% trans "You can write some comments about the experiment below" %}

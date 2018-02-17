@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-16 21:56+0100\n"
-"PO-Revision-Date: 2018-02-16 21:57+0100\n"
+"POT-Creation-Date: 2018-02-17 19:04+0100\n"
+"PO-Revision-Date: 2018-02-17 12:27+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -18,174 +18,176 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Poedit 1.8.7.1\n"
 
-#: models.py:83
+#: models.py:91
 msgid "left"
 msgstr "gauche"
 
-#: models.py:83
+#: models.py:91
 msgid "right"
 msgstr "droite"
 
-#: models.py:95
-msgid "What is your age?"
-msgstr "Quel est votre âge?"
+#: models.py:104
+msgid "What nationality are you?"
+msgstr ""
 
-#: models.py:98
+#: models.py:146
+msgid "How old are you?"
+msgstr ""
+
+#: models.py:149
 msgid "Female"
 msgstr "Femme"
 
-#: models.py:98
+#: models.py:149
 msgid "Male"
 msgstr "Homme"
 
-#: models.py:99
+#: models.py:150
 msgid "What is your gender?"
 msgstr "Quel est votre genre?"
 
-#: models.py:102 models.py:123 models.py:127
+#: models.py:153 models.py:174
 msgid "No"
 msgstr "Non"
 
-#: models.py:102 models.py:123 models.py:127
+#: models.py:153 models.py:174
 msgid "Yes"
 msgstr "Oui"
 
-#: models.py:103
+#: models.py:154
 msgid "Are you a student?"
 msgstr "Êtes-vous étudiant(e)?"
 
-#: models.py:106
+#: models.py:157
 msgid "Bachelor"
 msgstr "Licence"
 
-#: models.py:106
+#: models.py:157
 msgid "Master"
 msgstr "Master"
 
-#: models.py:107
+#: models.py:158
 msgid "PhD"
 msgstr "Doctorat"
 
-#: models.py:107 models.py:119
+#: models.py:158 models.py:170
 msgid "Not in the list"
 msgstr "Pas dans la liste"
 
-#: models.py:108
+#: models.py:159
 msgid "What is your level of study"
 msgstr "Quel est votre niveau d'étude?"
 
-#: models.py:111
+#: models.py:162
 msgid "Administration"
 msgstr "Administration"
 
-#: models.py:111
+#: models.py:162
 msgid "Archeology"
 msgstr "Archéologie"
 
-#: models.py:111
+#: models.py:162
 msgid "Biology"
 msgstr "Biologie"
 
-#: models.py:112
+#: models.py:163
 msgid "Buisiness school"
 msgstr "Ecole de commerce"
 
-#: models.py:112
+#: models.py:163
 msgid "Chemistry"
 msgstr "Chimie"
 
-#: models.py:113 tests.py:29
+#: models.py:164 tests.py:29
 msgid "Computer science"
 msgstr "Informatique"
 
-#: models.py:113 tests.py:27
+#: models.py:164 tests.py:27
 msgid "Economics"
 msgstr "Economie"
 
-#: models.py:114
+#: models.py:165
 msgid "Education"
 msgstr "Education"
 
-#: models.py:114 tests.py:27
+#: models.py:165 tests.py:27
 msgid "Law"
 msgstr "Droit"
 
-#: models.py:114
+#: models.py:165
 msgid "Management"
 msgstr "Gestion"
 
-#: models.py:115
+#: models.py:166
 msgid "Nursing school"
 msgstr "Ecole d'infirmière"
 
-#: models.py:115
+#: models.py:166
 msgid "Engineer"
 msgstr "Ecole d'ingénieur"
 
-#: models.py:115
+#: models.py:166
 msgid "Geography"
 msgstr "Géographie"
 
-#: models.py:116
+#: models.py:167
 msgid "History"
 msgstr "Histoire"
 
-#: models.py:116
+#: models.py:167
 msgid "Lettres"
 msgstr "Lettres"
 
-#: models.py:116
+#: models.py:167
 msgid "Mathematics"
 msgstr "Mathématiques"
 
-#: models.py:117 tests.py:28
+#: models.py:168 tests.py:28
 msgid "Medicine"
 msgstr "Médecine"
 
-#: models.py:117
+#: models.py:168
 msgid "Music"
 msgstr "Musique"
 
-#: models.py:117
+#: models.py:168
 msgid "Pharmacy"
 msgstr "Pharmacie"
 
-#: models.py:118
+#: models.py:169
 msgid "Philosophy"
 msgstr "Phylosophie"
 
-#: models.py:118
+#: models.py:169
 msgid "Physics"
 msgstr "Physique"
 
-#: models.py:118
+#: models.py:169
 msgid "Politics"
 msgstr "Sciences politiques"
 
-#: models.py:119
+#: models.py:170
 msgid "Sociology"
 msgstr "Sociologie"
 
-#: models.py:119
+#: models.py:170
 msgid "Sport"
 msgstr "Sport"
 
-#: models.py:121
+#: models.py:172
 msgid "What are you studying?"
 msgstr "Quelle discipline étudiez-vous?"
 
-#: models.py:124
-msgid "Do you pratice (regularly) some sport?"
-msgstr "Pratiquez-vous régulièrement du sport?"
+#: models.py:175
+msgid "Do you benefit from a scholarship?"
+msgstr ""
 
-#: models.py:128
-msgid "Had you ever participated in an economic experiment?"
-msgstr "Aviez-vous déjà participé à une expérience d'économie?"
-
-#: pages.py:19
-msgid ""
-"If you are a student you must select your level of study and the displine "
-"you are studying"
+#: pages.py:23
+#, fuzzy
+#| msgid ""
+#| "If you are a student you must select your level of study and the displine "
+#| "you are studying"
+msgid "If you are a student you must tell if you benefit from a scholarship."
 msgstr ""
 "Si vous êtes étudiant(e), vous devez préciser votre niveau d'études et la "
 "discipline que vous étudiez"
@@ -265,8 +267,8 @@ msgid "in the collective account."
 msgstr "dans le compte collectif"
 
 #: templates/coopfaceonline/CFResults.html:38
-msgid "Your payoff is equal to "
-msgstr "Votre gain est de "
+msgid "Your payoff for this part, if you are selected to be paid, is equal to "
+msgstr ""
 
 #: templates/coopfaceonline/Demographic.html:6
 msgid "Final questionnaire"
@@ -286,18 +288,40 @@ msgid "The experiment is over. Thank you for your participation."
 msgstr "L'expérience est terminée. Merci pour votre participation."
 
 #: templates/coopfaceonline/Final.html:14
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "        Your payoff will be computed at the end of this online "
+#| "experiment. At\n"
+#| "        this time you will be paired to another participant to determine "
+#| "the\n"
+#| "        total number of tokens placed in the collective account and "
+#| "therefore\n"
+#| "        to compute your payoff for this part of the experiment.\n"
+#| "        "
 msgid ""
-"Your final payoff will we computed at the end of this online experiment."
+"\n"
+"        Your final payoff will we computed at the end of this online "
+"experiment.\n"
+"        At this time you will be paired to another participant. If you are "
+"selected\n"
+"        to be paid for this experiment you will receive an email informing "
+"you\n"
+"        about your payoff for both parts and how you can collect it.\n"
+"        "
 msgstr ""
+"\n"
 "Votre gain sera calculé à la fin de cette expérience en ligne. A ce moment "
-"là vous serez apparié(e) à un autre participant."
+"là vous serez apparié(e) à un autre participant pour déterminer le nombre "
+"total de jetons placés dans le compte collectif et ainsi calculer votre gain "
+"pour cette partie de l'expérience."
 
-#: templates/coopfaceonline/Final.html:17
+#: templates/coopfaceonline/Final.html:22
 msgid "You can write some comments about the experiment below"
 msgstr ""
 "Vous pouvez écrire des commentaires sur l'expérience dans la zone ci-dessous."
 
-#: templates/coopfaceonline/Final.html:21
+#: templates/coopfaceonline/Final.html:26
 msgid "Save"
 msgstr "Enregistrer"
 
@@ -305,13 +329,30 @@ msgstr "Enregistrer"
 #, python-format
 msgid ""
 "\n"
-"        You have an endowment of %(endowment)s tokens.\n"
+"\n"
+"        You have an endowment of %(endowment)s tokens. You must decide how "
+"you\n"
+"        divide these %(endowment)s tokens between your individual account "
+"and\n"
+"        the collective account that is common to the two members of your "
+"group.\n"
+"        <br><br>\n"
+"        Each token you place in your individual account earns you 1 ecu, "
+"and\n"
+"        each token you place in the collective account earns\n"
+"        %(mpcr)s ecu to you and the other member of your group (the total "
+"number of\n"
+"        tokens placed in the collective account is multiplied by\n"
+"        %(multiplier)s and divided in two equal parts).\n"
+"        <br><br>\n"
+"        You have to enter the number of tokens you place in the collective\n"
+"        account, the rest will automatically be placed in your individual\n"
+"        account by the computer.\n"
+"\n"
 "        "
 msgstr ""
-"\n"
-"Vous disposez d'une dotation de %(endowment)s jetons."
 
-#: templates/coopfaceonline/PGDecision.html:18
+#: templates/coopfaceonline/PGDecision.html:32
 msgid "Please enter the number of tokens you put in the collective account"
 msgstr ""
 "Veuillez saisir le nombre de jetons que vous placez dans le compte collectif"
@@ -357,6 +398,42 @@ msgstr ""
 "là vous serez apparié(e) à un autre participant pour déterminer le nombre "
 "total de jetons placés dans le compte collectif et ainsi calculer votre gain "
 "pour cette partie de l'expérience."
+
+#: templates/coopfaceonline/Welcome.html:6
+msgid "Welcome"
+msgstr ""
+
+#: templates/coopfaceonline/Welcome.html:16
+msgid ""
+"\n"
+"        Welcome to this online experiment!<br>\n"
+"\n"
+"        "
+msgstr ""
+
+#~ msgid "What is your age?"
+#~ msgstr "Quel est votre âge?"
+
+#~ msgid "Do you pratice (regularly) some sport?"
+#~ msgstr "Pratiquez-vous régulièrement du sport?"
+
+#~ msgid "Had you ever participated in an economic experiment?"
+#~ msgstr "Aviez-vous déjà participé à une expérience d'économie?"
+
+#~ msgid "Your payoff is equal to "
+#~ msgstr "Votre gain est de "
+
+#~ msgid ""
+#~ "Your final payoff will we computed at the end of this online experiment."
+#~ msgstr "Votre gain sera calculé à la fin de cette expérience en ligne."
+
+#~ msgid ""
+#~ "\n"
+#~ "        You have an endowment of %(endowment)s tokens.\n"
+#~ "        "
+#~ msgstr ""
+#~ "\n"
+#~ "Vous disposez d'une dotation de %(endowment)s jetons."
 
 #~ msgid "Question"
 #~ msgstr "Question"

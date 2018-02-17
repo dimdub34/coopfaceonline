@@ -1,0 +1,26 @@
+{% extends "global/Page.html" %}
+{% load staticfiles otree %}
+{% load i18n %}
+
+{% block title %}
+    {% trans "Welcome" %}
+{% endblock %}
+
+{% block content %}
+    <div style="float: right;">
+        <img src="{% static 'coopfaceonline/logo_um.png' %}" style="width: 100px;" />
+        <img src="{% static 'coopfaceonline/logo_catho.png' %}" style="width: 100px;" />
+        <img src="{% static 'coopfaceonline/logo_cnrs.svg' %}" style="width: 100px;" />
+    </div>
+    <p>
+        {% blocktrans %}
+        Welcome to this online experiment!<br>
+
+        {% endblocktrans %}
+    </p>
+    <p>&nbsp;</p>
+
+    {% next_button %}
+
+
+{% endblock %}

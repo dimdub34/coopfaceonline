@@ -5,20 +5,23 @@ from .models import Constants
 from django.utils.translation import ugettext, get_language
 
 
+class Welcome(Page):
+    def is_displayed(self):
+        return self.round_number == 1
+
+
 class Demographic(Page):
     form_model = "player"
-    form_fields = ["age", "gender", "student", "student_level",
-                   "student_discipline", "sport", "experience"]
+    form_fields = ["nationality", "age", "gender", "student", "student_level",
+                   "student_discipline", "student_scholarship"]
 
     def is_displayed(self):
         return self.round_number == Constants.num_rounds
 
     def error_message(self, values):
-        if values["student"] and (values["student_level"] is None or
-        values["student_discipline"] is None):
-            return ugettext("If you are a student you must select "
-                           "your level of study and the displine "
-                           "you are studying")
+        if values["student"] and values["student_scholarship"] is None:
+            return ugettext("If you are a student you must tell if "
+                           "you benefit from a scholarship.")
 
 
 class Final(Page):
@@ -112,6 +115,7 @@ class CFResults(Page):
 
 
 page_sequence = [
+    Welcome,
     PGInstructions, PGDecision, PGResults,
     CFInstructions, CFDecision, CFResults,
     Demographic, Final]
