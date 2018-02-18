@@ -7,14 +7,20 @@
 {% endblock %}
 
 {% block content %}
-    <div style="float: right;">
-        <img src="{% static 'coopfaceonline/logo_um.png' %}" style="width: 100px;" />
-        <img src="{% static 'coopfaceonline/logo_catho.png' %}" style="width: 100px;" />
-        <img src="{% static 'coopfaceonline/logo_cnrs.svg' %}" style="width: 100px;" />
-    </div>
     <p>
         {% blocktrans %}
-        Welcome to this online experiment!<br>
+        Welcome to this online experiment.
+        <br><br>
+        This experiment is founded by the National Center for Scientific
+        Research (CNRS), the University of Montpellier and the Catholic
+        University of Lille.
+        <br><br>
+        The experiment will last around 20 minutes.
+        <br><br>
+        During the experiment you will accumulate gains. 50% of the participants
+        that will fill in the full experiment will be randomly selected to be
+        paid according their gain in the experiment. If you are selected you
+        will reveive an email describing the procedure to collect you gain.
 
         {% endblocktrans %}
     </p>
@@ -22,5 +28,12 @@
 
     {% next_button %}
 
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
 
+    <center>
+        <img src="{% static 'coopfaceonline/logo_um.png' %}" style="width: 100px;" />
+        <img src="{% static 'coopfaceonline/logo_catho.png' %}" style="width: 100px;" />
+        <img src="{% static 'coopfaceonline/logo_cnrs.svg' %}" style="width: 100px;" />
+    </center>
 {% endblock %}
