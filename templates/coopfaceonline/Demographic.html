@@ -24,17 +24,19 @@
         /* we disabled the student_scholarship combobox
         if the subject is not a student */
         window.onload = function() {
-            var combo_scholarship = $("#id_student_scholarshi");
-            combo_scholarship.prop("disabled", true);
+            var scholar_no = $("#id_student_scholarship_0");
+            var scholar_yes = $("#id_student_scholarship_1");
+            scholar_no.prop("disabled", true);
+            scholar_yes.prop("disabled", true);
             var student_no = $("#id_student_0");
             student_no.click(function(){
-                combo_scholarship.val("");
-                combo_scholarship.prop("disabled", true);
+            scholar_no.prop("disabled", true);
+            scholar_yes.prop("disabled", true);
             });
             var student_yes = $("#id_student_1");
             student_yes.click(function(){
-                combo_scholarship.prop("disabled", false);
-                combo_scholarship.prop("disabled", false);
+                scholar_no.prop("disabled", false);
+                scholar_yes.prop("disabled", false);
             });
         }
     </script>

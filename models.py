@@ -171,7 +171,7 @@ class Player(BasePlayer):
     student_scholarship = models.IntegerField(
         choices=[(0, ugettext('No')), (1, ugettext('Yes'))],
         label=ugettext("Do you benefit from a scholarship?"),
-        widget=widgets.RadioSelectHorizontal)
+        widget=widgets.RadioSelectHorizontal, blank=True)
     comments = models.LongStringField(blank=True)
 
     def set_cf_period_payoff(self):
