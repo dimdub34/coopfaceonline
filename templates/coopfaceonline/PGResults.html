@@ -12,16 +12,26 @@
         {% blocktrans with endowment=Constants.endowment %}
         You started with an endowment of {{ endowment }} tokens.
         {% endblocktrans %}
-        {% blocktrans with contrib=player.PG_contribution contrib_group=group.PG_group_contribution %}
-        You put {{ contrib }} token(s) in the collective account.
+        <br><br>
+        {% blocktrans with contrib=player.PG_contribution indiv=indiv %}
+        You put {{ indiv }} tokens in your individual account and {{ contrib }}
+        tokens in the collective account.
         {% endblocktrans %}
+        <br><br>
         {% blocktrans %}
-        Your payoff will be computed at the end of this online experiment. At
-        this time you will be paired to another participant to determine the
-        total number of tokens placed in the collective account and therefore
-        to compute your payoff for this part of the experiment.
+        At the end of this online experiment groups of size two will be randomly
+        formed. The total number of tokens placed in the collective account by
+        you group will then be computed, as well as your payoff for this part of
+        this experiment.
+        {% endblocktrans %}
+        <br><br>
+        {% blocktrans %}
+        If you are selected to be paid for this experiment, you will earn the
+        correponding amount of money for this part.
         {% endblocktrans %}
     </p>
+
+    <p>&nbsp;</p>
 
     {% next_button %}
 
