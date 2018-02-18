@@ -2,34 +2,35 @@
 
     <p>
         The experiment you are going to participate aims at studying the
-        decision process. We ask you to read the full instructions.
-        These instructions should let you understand the experiment. <br>
+        decision process. We ask you to read the instructions below.
+        These instructions should let you understand the experiment.
+        <br>
         The experiment is composed of two parts. The instructions below are
         those of part 1. The screen will display the instructions for part 2
-        when the first part will be over.<br>
-        During the experiment the payoff are in ecus. The conversion rate
-        of ecus in euros is given in instructions of each part.
+        when the first part will be over.
+        <br>
+        During the experiment the payoffs are in ecus. The conversion
+        rate of ecus in euros is given in instructions of each part.
     </p>
-    <p>&nbsp;</p>
+    <hr style="height: 1.5px;" />
     <h3>
         Part 1
     </h3>
     <p>
-        At the beginning of the experiment the server will form random
-        groups of two participants. You are not able to identify the other
-        player in your group and he/she is not able to identify yourself. You are
-        endowed with 20 tokens. You must decide how you divide these 20 tokens
-        between two accounts: your individual account and a collective account
-        that is common to the two members of your group (you and the other
-        member). You concretely have to enter on the screen the number of tokens
-        you put in the collective account. The computer will automatically put
-        the rest of the tokens in your individual account. You are free to put
-        any tokens you want in the collective account. The only constraint is
-        that it has to be an integer comprise between 0 and your endowment,
-        that is 0 token, 1 token, ..., 19 tokens, 20 tokens (your full
-        endowment).
+        At the beginning of the experiment the server will randomly form
+        groups of size two. You are not able to identify the other
+        member of your group and he/she is not able to identify yourself.
+        You are endowed with 20 tokens and you must decide how you divide these
+        20 tokens between two accounts: your individual account and a
+        collective account that is common to the two members of your group
+        (you and the other member). You concretely have to enter on the screen
+        the number of tokens you place in the collective account. The computer
+        will automatically put the rest of the tokens in your individual account.
+        You are free to place any tokens you want in the collective account. The
+        only constraint is that it has to be an integer comprise between 0 and
+        your endowment, that is 0 token, 1 token, ..., 19 tokens, 20 tokens
+        (your full endowment).
     </p>
-    <p>&nbsp;</p>
     <h4>
         The accounts
     </h4>
@@ -38,26 +39,26 @@
     </h5>
     <p>
         Each token placed in your individual account earns you 1 ecu. Your
-        individual account only earns ecus for you alone. So, for example, if
+        individual account earns ecus for you alone. So, for example, if
         you put 6 tokens on your individual account, this will earn you 6 ecus.
     </p>
     <h5>
         The collective account
     </h5>
     <p>
-        The collective account is shared by you and the other member of your
-        group. Each token placed in the collective account earns 0.6 ecus to each
+        Each token placed in the collective account earns 0.6 ecus to each
         member of the group (you and the other member of the group). Similarly,
         each token placed in the collective account by the other member of your
         group earns you 0.6 ecus. Thus, if for example, you place 6 tokens in the
         collective account, this will earn 3.6 ecus for each member of the group
-        (you included).
+        (you included). Put another way, the total number of tokens placed in
+        the collective account is multiplied by 1.2 and then divided in two
+        equal parts.
         <br>
         If for example there are 30 tokens in the collective account, your
-        payoff from this account is 30 x 0.6 = 18 ecus. The payoff from this
-        account of the other member of your group will also be 18 ecus.
+        payoff from this account is (30 x 1.2) / 2 = 18 ecus. The payoff from
+        this account of the other member of your group will also be 18 ecus.
     </p>
-    <p>&nbsp;</p>
     <h4>
         Gain
     </h4>
@@ -65,16 +66,17 @@
         Your gain is equal to the sum of the gains from your individual account
         and the collective account.
     </p>
-    <p>&nbsp;</p>
-    <h4>
-        Example
-    </h4>
+    <h5>
+        Example (illustrated by the video below)
+    </h5>
     <p>
         You place 14 tokens in the collective account and thus 6 tokens in your
         individual account. Let us suppose that the other member of your group
-        places 12 tokens in the collective account. In total, the collective
-        account now comprises 14+12 = 26 tokens. Your gain is then equal to 
-        6 ecus (individual account) + 26 x 0.6 (collective account) = 21.6 ecus.
+        places 12 tokens in the collective account. As a result, there are
+        14+12 = 26 tokens in the collective account. Your gain is therefore
+        equal to 6 ecus (individual account) + (26 x 1.2) / 2 (collective
+        account) = 21.6 ecus. The gain of the other member of your group is
+        equal to 8 + (26 x 1.2) / 2 = 23.6 ecus.
     </p>
 
     <video controls src="{% static 'coopfaceonline/coopface_video.m4v' %}">
@@ -92,10 +94,8 @@
         You will have only one decision to take. <br>
         You and the other participants to this experiment will make your decision
         independently from each other. After all decisions are made and the
-        experiment completed, the computer will randomly create groups of two
+        experiment completed, the computer will randomly form groups of two
         participants, which will allow to compute each one's payoffs according to
-        the description above. Within one week after the completion of the experiment,
-        you will receive a feedback about your decision and the decision made
-        by the other member of your group. <br>
+        the description above.<br>
         The conversion rate is 1 ecu = ${{ convertion_rate }}.
     </p>
