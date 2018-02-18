@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-18 19:20+0100\n"
-"PO-Revision-Date: 2018-02-18 19:22+0100\n"
+"POT-Creation-Date: 2018-02-18 20:13+0100\n"
+"PO-Revision-Date: 2018-02-18 20:14+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -286,27 +286,49 @@ msgstr "L'expérience est terminée. Merci pour votre participation."
 #: templates/coopfaceonline/Final.html:14
 msgid ""
 "\n"
-"        Your final payoff will we computed at the end of this online "
-"experiment.\n"
-"        At this time you will be paired to another participant. If you are "
-"selected\n"
-"        to be paid for this experiment you will receive an email informing "
+"        At the end of this online experiment the server will randomly "
+"formed\n"
+"        groups of size two in order to compute the payoffs for part 1 of "
+"the\n"
+"        experiment.\n"
+"        "
+msgstr ""
+"\n"
+"A la fin de cette expérience en ligne des groupes de deux seront formés de "
+"manière aléatoire\n"
+" afin de calculer les gains de la parti 1 de l'expérience."
+
+#: templates/coopfaceonline/Final.html:20
+msgid ""
+"\n"
+"        The server will also randomly select the participants that will be\n"
+"        paid for this experiment (half of the participants).\n"
+"        "
+msgstr ""
+"\n"
+"Le serveur sélectionnera également de manière aléatoire les participants qui "
+"seront rémunérés \n"
+"pour cette expérience (la moitié des participants)."
+
+#: templates/coopfaceonline/Final.html:25
+msgid ""
+"\n"
+"        If you are selected to be paid, you will receive an email informing "
 "you\n"
 "        about your payoff for both parts and how you can collect it.\n"
 "        "
 msgstr ""
 "\n"
-"Votre gain sera calculé à la fin de cette expérience en ligne. A ce moment "
-"là vous serez apparié(e) à un autre participant. Si vous êtes sélectionné(e) "
-"pour être payé(e) pour cette expérience vous recevrez un emai vous informant "
+"Si vous êtes sélectionne(e) pour être rémunéré(e) vous recevrez un email "
+"vous informant \n"
 "de votre gain pour les deux parties et de la procédure pour le récupérer."
 
-#: templates/coopfaceonline/Final.html:22
+#: templates/coopfaceonline/Final.html:31
 msgid "You can write some comments about the experiment below"
 msgstr ""
 "Vous pouvez écrire des commentaires sur l'expérience dans la zone ci-dessous."
 
-#: templates/coopfaceonline/Final.html:26
+#: templates/coopfaceonline/Final.html:35
 msgid "Save"
 msgstr "Enregistrer"
 
@@ -327,7 +349,7 @@ msgstr ""
 "comment \n"
 "vous répartissez ces %(endowment)s jetons entre votre compte individuel et "
 "le compte \n"
-"collectif commun à l'ensemble des membres de votre groupe."
+"collectif."
 
 #: templates/coopfaceonline/PGDecision.html:18
 #, python-format
@@ -349,7 +371,7 @@ msgstr ""
 "vous et \n"
 "à l'autre membre de votre groupe (le nombre total de jetons placés sur le "
 "compte collectif \n"
-"est multiplié par %(multiplier)s et divisé en deux parts égales."
+"est multiplié par %(multiplier)s et divisé en deux parts égales)."
 
 #: templates/coopfaceonline/PGDecision.html:26
 msgid ""
