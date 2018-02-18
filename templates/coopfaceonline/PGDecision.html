@@ -9,27 +9,29 @@
 {% block content %}
 
     <p>
-        {% blocktrans with endowment=Constants.endowment mpcr=Constants.mpcr multiplier=subsession.multiplier %}
-
+        {% blocktrans with endowment=Constants.endowment %}
         You have an endowment of {{ endowment }} tokens. You must decide how you
         divide these {{endowment}} tokens between your individual account and
         the collective account that is common to the two members of your group.
+        {% endblocktrans %}
         <br><br>
+        {% blocktrans with mpcr=Constants.mpcr multiplier=subsession.multiplier %}
         Each token you place in your individual account earns you 1 ecu, and
         each token you place in the collective account earns
-        {{ mpcr }} ecu to you and the other member of your group (the total number of
-        tokens placed in the collective account is multiplied by
+        {{ mpcr }} ecu to you and to the other member of your group (the total
+        number of tokens placed in the collective account is multiplied by
         {{ multiplier }} and divided in two equal parts).
+        {% endblocktrans %}
         <br><br>
+        {% blocktrans %}
         You have to enter the number of tokens you place in the collective
         account, the rest will automatically be placed in your individual
         account by the computer.
-
         {% endblocktrans %}
     </p>
 
     <p>
-        {%trans "Please enter the number of tokens you put in the collective account" %}
+        {%trans "Please enter the number of tokens you place in the collective account" %}
         {% formfield player.PG_contribution label="" %}
     </p>
 
