@@ -73,7 +73,7 @@ class Player(BasePlayer):
     # public goods
     # --------------------------------------------------------------------------
 
-    PG_contribution = models.IntegerField()
+    PG_contribution = models.IntegerField(min=0, max=Constants.endowment)
     PG_payoff_individual_account = models.FloatField()
     PG_payoff_collective_account = models.FloatField()
     PG_payoff = models.CurrencyField()
@@ -154,7 +154,7 @@ class Player(BasePlayer):
     student_level = models.IntegerField(
         choices=[(0, ugettext('Bachelor')), (1, ugettext('Master')),
                  (2, ugettext('PhD')), (3, ugettext('Not in the list'))],
-        label=ugettext("What is your level of study"), blank=True)
+        label=ugettext("What is your level of study"))
     student_discipline = models.StringField(
         choices=[
             ugettext("Administration"), ugettext("Archeology"), ugettext("Biology"),
@@ -167,7 +167,7 @@ class Player(BasePlayer):
             ugettext("Philosophy"), ugettext("Physics"), ugettext("Politics"),
             ugettext("Sociology"), ugettext("Sport"), ugettext("Not in the list")
         ],
-        label=ugettext("What are you studying?"), blank=True)
+        label=ugettext("What are you studying ? / What did you study?"))
     student_scholarship = models.IntegerField(
         choices=[(0, ugettext('No')), (1, ugettext('Yes'))],
         label=ugettext("Do you benefit from a scholarship?"),
