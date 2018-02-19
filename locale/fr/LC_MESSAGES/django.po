@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-19 15:15+0100\n"
-"PO-Revision-Date: 2018-02-19 15:39+0100\n"
+"POT-Creation-Date: 2018-02-19 15:52+0100\n"
+"PO-Revision-Date: 2018-02-19 15:54+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -222,9 +222,8 @@ msgid "Part 2"
 msgstr "Partie 2"
 
 #: templates/coopfaceonline/CFResults.html:6
-#: templates/coopfaceonline/PGResults.html:6
-msgid "Results"
-msgstr "Résultats"
+msgid "Summary of part 2"
+msgstr "Récapitulatif de la partie 2"
 
 #: templates/coopfaceonline/CFResults.html:13
 msgid "Interaction"
@@ -327,7 +326,7 @@ msgid ""
 "        "
 msgstr ""
 "\n"
-"Si vous êtes sélectionne(e) pour être rémunéré(e) vous recevrez un email "
+"Si vous êtes sélectionné(e) pour être rémunéré(e) vous recevrez un email "
 "vous informant \n"
 "de votre gain pour les deux parties et de la procédure pour le récupérer."
 
@@ -404,6 +403,10 @@ msgstr ""
 msgid "Instructions"
 msgstr "Instructions"
 
+#: templates/coopfaceonline/PGResults.html:6
+msgid "Summary of part 1"
+msgstr "Récapitulatif de la partie 1"
+
 #: templates/coopfaceonline/PGResults.html:12
 #, python-format
 msgid ""
@@ -459,6 +462,10 @@ msgstr ""
 "vous gagnerez le\n"
 "montant correspondant pour cette partie."
 
+#: templates/coopfaceonline/PGResults.html:36
+msgid "Start part 2"
+msgstr "Démarrer la partie 2"
+
 #: templates/coopfaceonline/Welcome.html:6
 msgid "Welcome"
 msgstr "Bienvenue"
@@ -490,13 +497,21 @@ msgstr ""
 #: templates/coopfaceonline/Welcome.html:21
 msgid ""
 "\n"
-"        The experiment will last around 20 minutes.\n"
+"        The experiment will last around 20 minutes. We ask you to not close "
+"your\n"
+"        browser before the end of the experiment. It is also necessary to "
+"use\n"
+"        either a computer or a digital tablet and not your cell phone.\n"
 "        "
 msgstr ""
 "\n"
-"L'expérience va durer environ 20 minutes."
+"L'expérience va durer environ 20 minutes. Nous vous demandons de ne pas "
+"fermer le navigateur \n"
+"avant la fin de l'expérience. Il est impératif d'utiliser un ordinateur ou "
+"une \n"
+"tablette et non un téléphone portable."
 
-#: templates/coopfaceonline/Welcome.html:25
+#: templates/coopfaceonline/Welcome.html:27
 msgid ""
 "\n"
 "        During the experiment you will accumulate gains. One participant "
@@ -517,6 +532,17 @@ msgstr ""
 "sélectionné(e) vous \n"
 "recevrez un mail vous décrivant la procédure pour récupérer votre gain.\n"
 "  "
+
+#~ msgid "Results"
+#~ msgstr "Résultats"
+
+#~ msgid ""
+#~ "\n"
+#~ "        The experiment will last around 20 minutes.\n"
+#~ "        "
+#~ msgstr ""
+#~ "\n"
+#~ "L'expérience va durer environ 20 minutes."
 
 #~ msgid ""
 #~ "\n"
