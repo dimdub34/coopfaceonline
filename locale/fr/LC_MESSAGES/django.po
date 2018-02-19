@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-18 20:13+0100\n"
-"PO-Revision-Date: 2018-02-18 20:14+0100\n"
+"POT-Creation-Date: 2018-02-19 15:15+0100\n"
+"PO-Revision-Date: 2018-02-19 15:39+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -175,8 +175,8 @@ msgid "Sport"
 msgstr "Sport"
 
 #: models.py:170
-msgid "What are you studying?"
-msgstr "Quelle discipline étudiez-vous?"
+msgid "What are you studying ? / What did you study?"
+msgstr "Quelle discipline avez-vous étudié / étudiez-vous?"
 
 #: models.py:173
 msgid "Do you benefit from a scholarship?"
@@ -205,7 +205,15 @@ msgstr ""
 "Veuillez selectionner l'individu avec lequel vous souhaitez interagir, "
 "sachant que vous placez %(contrib)s jetons dans le compte collectif."
 
+#: templates/coopfaceonline/CFDecision.html:26
+msgid "Left"
+msgstr "Gauche"
+
 #: templates/coopfaceonline/CFDecision.html:27
+msgid "Right"
+msgstr "Droite"
+
+#: templates/coopfaceonline/CFDecision.html:31
 msgid "Which player do you want to interact with?"
 msgstr "Avec quel individu souhaitez-vous interagir?"
 
@@ -296,7 +304,7 @@ msgstr ""
 "\n"
 "A la fin de cette expérience en ligne des groupes de deux seront formés de "
 "manière aléatoire\n"
-" afin de calculer les gains de la parti 1 de l'expérience."
+" afin de calculer les gains de la partie 1 de l'expérience."
 
 #: templates/coopfaceonline/Final.html:20
 msgid ""
