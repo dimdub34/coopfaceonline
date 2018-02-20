@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-20 13:10+0100\n"
-"PO-Revision-Date: 2018-02-20 13:45+0100\n"
+"POT-Creation-Date: 2018-02-20 14:10+0100\n"
+"PO-Revision-Date: 2018-02-20 14:11+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -247,7 +247,7 @@ msgid ""
 "\n"
 "        You have selected the individual who placed 20 tokens in the "
 "collective\n"
-"        account in %(nb_found)s of the %(nb_period)s paired shown to you.\n"
+"        account in %(nb_found)s of the %(nb_period)s pairs shown to you.\n"
 "        "
 msgstr ""
 "\n"
@@ -255,7 +255,7 @@ msgstr ""
 "collectif \n"
 "dans %(nb_found)s des %(nb_period)s paires qui vous ont été montrées."
 
-#: templates/coopfaceonline/CFResults.html:33
+#: templates/coopfaceonline/CFResults.html:32
 msgid ""
 "\n"
 "        In the interaction that has been randomly selected for\n"
@@ -269,19 +269,19 @@ msgstr ""
 "l'expérience, \n"
 "le joueur que vous avez sélectionné a placé"
 
-#: templates/coopfaceonline/CFResults.html:39
+#: templates/coopfaceonline/CFResults.html:38
 msgid "tokens"
 msgstr "jetons"
 
-#: templates/coopfaceonline/CFResults.html:41
+#: templates/coopfaceonline/CFResults.html:40
 msgid "0 token"
 msgstr "0 jeton"
 
-#: templates/coopfaceonline/CFResults.html:43
+#: templates/coopfaceonline/CFResults.html:42
 msgid "in the collective account."
 msgstr "dans le compte collectif."
 
-#: templates/coopfaceonline/CFResults.html:44
+#: templates/coopfaceonline/CFResults.html:43
 msgid "Your payoff for this part, if you are selected to be paid, is equal to "
 msgstr "Votre gain pour cette partie, si vous êtes sélectionné(e), est de "
 
