@@ -8,7 +8,7 @@
 
 {% block content %}
 
-    <table class="table">
+    <!--<table class="table">
         <tr>
             <th>{% trans "Interaction" %}</th>
             <th>{% trans "Tokens put by" %} <br>{% trans "selected player" %}</th>
@@ -21,12 +21,18 @@
                 <td>{{ p.CF_payoff }}</td>
             </tr>
         {% endfor %}
-    </table>
-
+    </table>-->
+    <p>
+        {% blocktrans with nb_period=Constants.num_rounds nb_found=player.CF_number_of_cooperators_found %}
+        You have selected the individual who placed 20 tokens in the collective
+        account in {{ nb_found }} of the {{ nb_period }} paired shown to you.
+        {% endblocktrans %}
+    </p>
+    <p>&nbsp;</p>
     <p>
         {% blocktrans with question=CF_period_selected_for_pay %}
-        This is interaction {{ question }} that has been randomly selected for
-        your payoff of this part of the experiment. The player you've selected
+        In the interaction that has been randomly selected for
+        your payoff of this part of the experiment, the player you've selected
         put
         {% endblocktrans %}
         {% if CF_choose_cooperator %}

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-19 15:52+0100\n"
-"PO-Revision-Date: 2018-02-19 15:54+0100\n"
+"POT-Creation-Date: 2018-02-20 13:10+0100\n"
+"PO-Revision-Date: 2018-02-20 13:12+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -241,35 +241,47 @@ msgstr "le joueur sélectionné"
 msgid "Your payoff"
 msgstr "Votre gain"
 
-#: templates/coopfaceonline/CFResults.html:27
+#: templates/coopfaceonline/CFResults.html:26
 #, python-format
 msgid ""
 "\n"
-"        This is interaction %(question)s that has been randomly selected "
-"for\n"
-"        your payoff of this part of the experiment. The player you've "
+"        You have selected the individual who placed 20 tokens in the "
+"collective\n"
+"        account in %(nb_found)s of the %(nb_period)s paired shown to you.\n"
+"        "
+msgstr ""
+"\n"
+"Vous avez sélectionné l'individu qui a placé 20 jetons dans le compte "
+"collectif \n"
+"dans %(nb_found)s des %(nb_period)s paires qui vous ont été montrées."
+
+#: templates/coopfaceonline/CFResults.html:33
+msgid ""
+"\n"
+"        In the interaction that has been randomly selected for\n"
+"        your payoff of this part of the experiment, the player you've "
 "selected\n"
 "        put\n"
 "        "
 msgstr ""
 "\n"
-"C'est l'interaction %(question)s qui a été tiré au sort pour votre gain à "
-"cette partie de l'expérience.\n"
-"Le joueur que vous avez sélectionné a placé"
+"A l'interaction qui a été tirée au sort pour votre gain à cette partie de "
+"l'expérience, \n"
+"le joueur que vous avez sélectionné a placé"
 
-#: templates/coopfaceonline/CFResults.html:33
+#: templates/coopfaceonline/CFResults.html:39
 msgid "tokens"
 msgstr "jetons"
 
-#: templates/coopfaceonline/CFResults.html:35
+#: templates/coopfaceonline/CFResults.html:41
 msgid "0 token"
 msgstr "0 jeton"
 
-#: templates/coopfaceonline/CFResults.html:37
+#: templates/coopfaceonline/CFResults.html:43
 msgid "in the collective account."
 msgstr "dans le compte collectif"
 
-#: templates/coopfaceonline/CFResults.html:38
+#: templates/coopfaceonline/CFResults.html:44
 msgid "Your payoff for this part, if you are selected to be paid, is equal to "
 msgstr "Votre gain pour cette partie, si vous êtes sélectionné(e), est de "
 
