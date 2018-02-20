@@ -86,7 +86,7 @@ class Player(BasePlayer):
     CF_defector = models.StringField()
     CF_cooperator_on_left = models.BooleanField()
     CF_choice = models.IntegerField(
-        choices=[(0, ugettext("left")), (1, ugettext("right"))],
+        choices=[(0, ugettext("Left")), (1, ugettext("Right"))],
         widget=widgets.RadioSelectHorizontal)
     CF_choose_cooperator = models.BooleanField()
     CF_number_of_cooperators_found = models.IntegerField()
@@ -172,6 +172,11 @@ class Player(BasePlayer):
         choices=[(0, ugettext('No')), (1, ugettext('Yes'))],
         label=ugettext("Do you benefit from a scholarship?"),
         widget=widgets.RadioSelectHorizontal, blank=True)
+    student_scholarship_level = models.StringField(
+        choices=[
+            "0", "0 bis", "1", "2", "3", "4", "5", "6", "7"],
+        label=ugettext("If you benefit a scholarship, what is its level?"),
+        blank=True)
     comments = models.LongStringField(blank=True)
 
     def set_cf_period_payoff(self):

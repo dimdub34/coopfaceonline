@@ -24,6 +24,7 @@
         /* we disabled the student_scholarship combobox
         if the subject is not a student */
         window.onload = function() {
+            // enable/disable scholar depending on student answer
             var scholar_no = $("#id_student_scholarship_0");
             var scholar_yes = $("#id_student_scholarship_1");
             scholar_no.prop("disabled", true);
@@ -37,6 +38,15 @@
             student_yes.click(function(){
                 scholar_no.prop("disabled", false);
                 scholar_yes.prop("disabled", false);
+            });
+            // enable/disable scholar_level depending on scholar answer
+            var scholar_level = $("#id_student_scholarship_level");
+            scholar_level.prop("disabled", true);
+            scholar_no.click(function(){
+                scholar_level.prop("disabled", true);
+            });
+            scholar_yes.click(function() {
+                scholar_level.prop("disabled", false);
             });
         }
     </script>

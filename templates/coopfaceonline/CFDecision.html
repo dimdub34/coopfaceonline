@@ -23,13 +23,20 @@
             {% endif %}
         </tr>
         <tr>
-            <td style="text-align: center;"><strong>{% trans "Left" %}</strong></td>
-            <td style="text-align: center;"><strong>{% trans "Right" %}</strong></td>
+            <td colspan="2" style="text-align: center;">
+                {% trans "Which player do you want to interact with?" %}
+            </td>
+        </tr>
+        <tr>
+            <!--<td style="text-align: center;"><strong>{% trans "Left" %}</strong></td>-->
+            <td style="text-align: center;"><strong>{{ form.CF_choice.0 }}</strong></td>
+            <td style="text-align: center;"><strong>{{ form.CF_choice.1 }}</strong></td>
+            <!--<td style="text-align: center;"><strong>{% trans "Right" %}</strong></td>-->
         </tr>
     </table>
     <p>&nbsp;</p>
-    {% trans "Which player do you want to interact with?" %}
-    {% formfield player.CF_choice label="" %}
+    <!--{% trans "Which player do you want to interact with?" %}
+    {% formfield player.CF_choice label="" %}-->
 
     {% next_button %}
 

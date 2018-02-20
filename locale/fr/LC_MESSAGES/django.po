@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-20 14:10+0100\n"
-"PO-Revision-Date: 2018-02-20 14:11+0100\n"
+"POT-Creation-Date: 2018-02-20 18:22+0100\n"
+"PO-Revision-Date: 2018-02-20 18:23+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -18,13 +18,13 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Poedit 1.8.7.1\n"
 
-#: models.py:89
-msgid "left"
-msgstr "gauche"
+#: models.py:89 templates/coopfaceonline/CFDecision.html:31
+msgid "Left"
+msgstr "Gauche"
 
-#: models.py:89
-msgid "right"
-msgstr "droite"
+#: models.py:89 templates/coopfaceonline/CFDecision.html:34
+msgid "Right"
+msgstr "Droite"
 
 #: models.py:102
 msgid "What nationality are you?"
@@ -180,13 +180,23 @@ msgstr "Quelle discipline avez-vous étudié / étudiez-vous?"
 
 #: models.py:173
 msgid "Do you benefit from a scholarship?"
-msgstr "Bénéficiez-vous d'une bourse?"
+msgstr "Bénéficiez-vous d'une bourse sur critères sociaux?"
 
-#: pages.py:23
+#: models.py:178
+msgid "If you benefit a scholarship, what is its level?"
+msgstr "Si vous bénéficiez d'une bourse sur critères sociaux, à quel échelon?"
+
+#: pages.py:24
 msgid "If you are a student you must tell if you benefit from a scholarship."
 msgstr ""
 "Si vous êtes étudiant(e), vous devez préciser si vous bénéficiez ou non "
 "d'une bourse."
+
+#: pages.py:28
+msgid "If you benefit a scholarship you have to specify its level."
+msgstr ""
+"Si vous bénéficiez d'une bourse sur critères sociaux, vous devez préciser "
+"l'échelon."
 
 #: templates/coopfaceonline/CFDecision.html:6
 #: templates/coopfaceonline/PGDecision.html:6
@@ -205,15 +215,8 @@ msgstr ""
 "Veuillez selectionner l'individu avec lequel vous souhaitez interagir, "
 "sachant que vous placez %(contrib)s jetons dans le compte collectif."
 
-#: templates/coopfaceonline/CFDecision.html:26
-msgid "Left"
-msgstr "Gauche"
-
 #: templates/coopfaceonline/CFDecision.html:27
-msgid "Right"
-msgstr "Droite"
-
-#: templates/coopfaceonline/CFDecision.html:31
+#: templates/coopfaceonline/CFDecision.html:38
 msgid "Which player do you want to interact with?"
 msgstr "Avec quel individu souhaitez-vous interagir?"
 
@@ -544,6 +547,12 @@ msgstr ""
 "sélectionné(e) vous \n"
 "recevrez un mail vous décrivant la procédure pour récupérer votre gain.\n"
 "  "
+
+#~ msgid "left"
+#~ msgstr "gauche"
+
+#~ msgid "right"
+#~ msgstr "droite"
 
 #~ msgid "Results"
 #~ msgstr "Résultats"

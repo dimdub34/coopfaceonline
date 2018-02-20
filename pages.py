@@ -13,7 +13,8 @@ class Welcome(Page):
 class Demographic(Page):
     form_model = "player"
     form_fields = ["nationality", "age", "gender", "student", "student_level",
-                   "student_discipline", "student_scholarship"]
+                   "student_discipline", "student_scholarship",
+                   "student_scholarship_level"]
 
     def is_displayed(self):
         return self.round_number == Constants.num_rounds
@@ -21,7 +22,11 @@ class Demographic(Page):
     def error_message(self, values):
         if values["student"] and values["student_scholarship"] is None:
             return ugettext("If you are a student you must tell if "
-                           "you benefit from a scholarship.")
+                            "you benefit from a scholarship.")
+        if values["student_scholarship"] and \
+                values["student_scholarship_level"] is None:
+            return ugettext("If you benefit a scholarship you have to specify "
+                            "its level.")
 
 
 class Final(Page):
