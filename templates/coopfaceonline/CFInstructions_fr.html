@@ -1,59 +1,60 @@
 {% load staticfiles otree %}
 
     <p>
-        Dans cette partie vous allez successivement avoir sur votre écran 7 paires
-        d'individus en photo. Pour chaque paire vous allez devoir décider avec
-        quel individu vous souhaitez interagir dans le même jeu que celui de
-        la partie 1, sachant que <strong>votre placement dans le compte collectif
-        sera de 20 jetons automatiquement</strong>, c'est à dire l'ensemble de votre
-        dotation. Concrètement, à l'écran vous devrez choisir si vous souhaitez
-        interagir avec l'individu de gauche ou de droite en cliquant sur le
-        bouton correspondant (Capture d'écran ci-dessous).
-    </p>
-    <p>
-        Les individus que vous allez voir en photo sont tous des hommes. Ils ont
-        précédemment participé à une expérience identique à celle de la
-        partie 1. Dans des groupes de deux, chacun avait une dotation de 20
-        jetons et devait décider de la répartition de ces 20 jetons entre son
-        compte individuel et le compte collectif de son groupe. Aucune photo
-        n’était utilisée lors de cette expérience et la composition des groupes
-        était aléatoire et anonyme, de sorte que personne n'était en mesure
-        d'identifier l'autre membre de son groupe.
-    </p>
-    <p>
-        Dans chacune des paires que vous allez successivement voir sur votre
-        écran, un individu a placé 0 jeton dans le compte collectif et
-        l’autre a placé 20 jetons dans le compte collectif lors de leur
-        participation précédente. Le placement gauche/droite à l'écran de ces
-        individus est aléatoire.
-    </p>
-    <p>
-        Le nombre total de jetons placés dans le compte collectif correspond
-        à la somme du nombre de jetons placé par l'individu sélectionné et
-        par vous (20 jetons). <br>
-        Ainsi, si vous sélectionnez l'individu qui a placé 0 jeton dans le
-        compte collectif votre gain pour cette interaction est égal à 0
-        (compte individuel) + 12 (compte collectif (20 x 1.2) / 2) = 12 ecus,
-        et si vous sélectionnez l'individu qui a placé 20 jetons dans le compte
-        collectif votre gain est égal à 0 (compte individuel) + 24 (compte
-        collectif (40 x 1.2) / 2 = 24 ecus.
-    </p>
-    <p>
-        Votre choix détermine votre gain uniquement, il ne
-        détermine pas le gain de l'individu que vous sélectionnez, ce dernier
-        ayant déjà reçu son gain au moment de sa participation antérieure.
-    </p>
-    <p>
-        Une des 7 interactions sera sélectionnée au hasard à la fin de la partie,
-        et votre gain à cette interaction constituera votre gain pour la partie.
-        Le taux de conversion est 1 ecu = {{ convertion_rate }}€.
-    </p>
+    Dans cette partie vous allez successivement avoir sur votre écran 7 paires
+    d'individus en photo. Pour chaque paire vous allez devoir décider avec
+    quel individu vous souhaitez interagir dans le même jeu que celui de
+    la partie 1, sachant que <strong>votre placement dans le compte collectif
+    sera de 20 jetons automatiquement</strong>, c'est à dire l'ensemble de votre
+    dotation. Concrètement, à l'écran vous devrez choisir si vous souhaitez
+    interagir avec l'individu de gauche ou de droite en cliquant sur le
+    bouton correspondant (Capture d'écran ci-dessous).
+</p>
+<p>
+    Les individus que vous allez voir en photo sont tous des hommes. Ils ont
+    précédemment participé à une expérience identique à celle de la
+    partie 1. Dans des groupes de deux, chacun avait une dotation de 20
+    jetons et devait décider de la répartition de ces 20 jetons entre son
+    compte individuel et le compte collectif de son groupe. Aucune photo
+    n’était utilisée lors de cette expérience et la composition des groupes
+    était aléatoire et anonyme, de sorte que personne n'était en mesure
+    d'identifier l'autre membre de son groupe.
+</p>
+<p>
+    Dans chacune des paires que vous allez successivement voir sur votre
+    écran, un individu a placé 0 jeton dans le compte collectif et
+    l’autre a placé 20 jetons dans le compte collectif lors de leur
+    participation précédente. Le placement gauche/droite à l'écran de ces
+    individus est aléatoire.
+</p>
+<p>
+    Le nombre total de jetons placés dans le compte collectif correspond
+    à la somme du nombre de jetons placé par l'individu sélectionné et
+    par vous (20 jetons). <br>
+    Ainsi, si vous sélectionnez l'individu qui a placé 0 jeton dans le
+    compte collectif votre gain pour cette interaction est égal à 0
+    (compte individuel) + 12 (compte collectif (20 x 1.2) / 2) = 12 ecus,
+    et si vous sélectionnez l'individu qui a placé 20 jetons dans le compte
+    collectif votre gain est égal à 0 (compte individuel) + 24 (compte
+    collectif (40 x 1.2) / 2 = 24 ecus.
+</p>
+<p>
+    Votre choix détermine votre gain uniquement, il ne
+    détermine pas le gain de l'individu que vous sélectionnez, ce dernier
+    ayant déjà reçu son gain au moment de sa participation antérieure.
+</p>
+<p>
+    Une des 7 interactions sera sélectionnée au hasard à la fin de la partie,
+    et votre gain à cette interaction constituera votre gain pour la partie.
+    Le taux de conversion est 1 ecu = {{ convertion_rate }}€.
+</p>
 
-    <p>&nbsp;</p>
+<p>&nbsp;</p>
 
-    <figure>
-        <figcaption style="color: green; font-weight: bold;">
-            Capture de l'écran de décision
-        </figcaption>
-        <img src="{% static 'coopfaceonline/coopface__decision__anonyme__fr.png' %}" style="border-style: solid; border-color: green;"/>
-    </figure>
+<figure>
+    <figcaption style="color: green; font-weight: bold;">
+        Capture de l'écran de décision
+    </figcaption>
+    <img src="{% static 'coopfaceonline/coopface__decision__anonyme__fr.png' %}"
+         style="border-style: solid; border-color: green;"/>
+</figure>

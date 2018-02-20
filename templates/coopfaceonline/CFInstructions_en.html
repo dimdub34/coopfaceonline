@@ -1,40 +1,58 @@
 {% load staticfiles otree %}
 
-    <p>
-        In this part you will be shown successively 7 pairs of individual
-        faces. Each pair is composed of photographs of two individuals. In each
-        pair, the two individuals that appear on the photographs have already
-        participated in the very same game that you played in Part 1 of this
-        experiment (without the photographs).
-        In each pair, one of them had placed 0 token on the collective
-        account and the other had placed 20 tokens on the collective account.
-        In each pair, you have to select the individual with whom you want to
-        interact in the very same game as the one you played in Part 1 of this
-        experiment, knowing that <strong>the computer will automatically place your
-        20 tokens in the collective account</strong>. Hence, the total number
-        of tokens placed in the group account is equal to the 20 tokens placed by
-        yourself plus the number of tokens placed by the individual whom you
-        selected to interact with (either 0 or 20 tokens). Thus, if you select
-        the individual who placed 0 token in the group account, your gain
-        will be equal to 0 (individual account) + (20 x 1.2) / 2 (group account) =
-        12 ecus. Alternatively, if you select the individual who placed 20
-        tokens in the group account, your gain will then be equal to 0
-        (individual account) + (40 x 1.2) / 2 (group account) = 24 ecus.
-        <br>
-        Your choice only affects your gain, it doesn't affect the gain of the
-        individual you select, the later received his payoff at the time of
-        his participation.
-        <br>
-        One of the seven interactions will be randomly selected at the end of
-        the part, and your gain at this interaction will constitute your
-        payoff for this part. The conversion rate is 1 ecu = ${{ convertion_rate }}.
-    </p>
+<p>
+    In this part you will be shown successively 7 pairs of individual
+    faces. Each pair is composed of photographs of two individuals.
+    For each pair, you will have to select the individual with whom you want to
+    interact in the very same game as the one you played in Part 1 of this
+    experiment, knowing that <strong>the computer will automatically place your
+    20 tokens in the collective account</strong> (your entire endowment).
+    Concretely on the screen you will have to decide if you wan to interact with
+    the individual on the left side or on the right side by clicking on the
+    corresponding radio button (cf. the screenshots below).
+</p>
+<p>
+    All the individuals you will see are men. They previously participed in the
+    very same game that you played in Part 1. In groups of size two, each one
+    was endowed with 20 tokens and had to decide how to divide these tokens
+    between their individual account and the collective account of their group.
+    No photograph was used in this experiment and groups were randomly and
+    anonymously formed so that no one was able to identify the other member of
+    his group.
+</p>
+<p>
+    In each pair you will successively see on your screen, one individual
+    placed 0 token in the collective account and the other placed 20 tokens
+    in the collective account during their previous participation. The pictures
+    of the two individuals are randomly placed on the screen (left / right).
+</p>
+<p>
+    The total number of tokens placed in the group account is equal to the sum
+    of the tokens placed by yourself (20) and by the individual you select to
+    interact with. Therefore, if you select the individual who placed 0 token
+    in the group account, your gain for this interaction is equal to 0
+    (individual account) + 12 (collective account (20 x 1.2) / 2) =
+    12 ecus. Alternatively, if you select the individual who placed 20
+    tokens in the group account, your gain is equal to 0
+    (individual account) + 24 (collective account (40 x 1.2) / 2) = 24 ecus.
+</p>
+<p>
+    Your choice only affects your gain, it doesn't affect the gain of the
+    individual you select, the later received his payoff at the time of
+    his participation.
+</p>
+<p>
+    One of the seven interactions will be randomly selected at the end of
+    the part, and your gain at this interaction will constitute your
+    payoff for this part. The conversion rate is 1 ecu = ${{ convertion_rate }}.
+</p>
 
-    <p>&nbsp;</p>
+<p>&nbsp;</p>
 
-    <figure>
-        <figcaption style="color: green; font-weight: bold;">
-            Screenshot of the decision screen
-        </figcaption>
-        <img src="{% static 'coopfaceonline/coopface__decision__anonyme__en.png' %}" />
-    </figure>
+<figure>
+    <figcaption style="color: green; font-weight: bold;">
+        Screenshots of the decision screen
+    </figcaption>
+    <img src="{% static 'coopfaceonline/coopface__decision__anonyme__en.png' %}"
+         style="border-style: solid; border-color: green;"/>
+</figure>
