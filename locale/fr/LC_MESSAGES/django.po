@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-20 13:10+0100\n"
-"PO-Revision-Date: 2018-02-20 13:12+0100\n"
+"PO-Revision-Date: 2018-02-20 13:45+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -279,7 +279,7 @@ msgstr "0 jeton"
 
 #: templates/coopfaceonline/CFResults.html:43
 msgid "in the collective account."
-msgstr "dans le compte collectif"
+msgstr "dans le compte collectif."
 
 #: templates/coopfaceonline/CFResults.html:44
 msgid "Your payoff for this part, if you are selected to be paid, is equal to "
