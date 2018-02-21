@@ -58,7 +58,8 @@ class Subsession(BaseSubsession):
                 # we set the cooperator either on the left or on the right
                 p.participant.vars["CF_left_is_coop"] = \
                     [random.randint(0, 1) for _ in range(Constants.num_rounds)]
-                p.participant.vars["CF_period_selected_for_pay"] = random.randint(1, Constants.num_rounds)
+                p.participant.vars["CF_period_selected_for_pay"] = \
+                    random.randint(1, Constants.num_rounds)
 
 
 class Group(BaseGroup):
@@ -181,8 +182,8 @@ class Player(BasePlayer):
         choices=[(0, ugettext('No')), (1, ugettext('Yes'))],
         label=ugettext("Did you recognize one individual on the pictures?"),
         widget=widgets.RadioSelectHorizontal)
-    hidden_screen_height = models.IntegerField()
     hidden_screen_width = models.IntegerField()
+    hidden_screen_height = models.IntegerField()
     hidden_play_on_mobile = models.IntegerField()
     comments = models.LongStringField(blank=True)
 

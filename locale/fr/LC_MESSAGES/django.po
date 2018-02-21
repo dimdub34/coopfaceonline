@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-21 14:12+0100\n"
+"POT-Creation-Date: 2018-02-21 15:27+0100\n"
 "PO-Revision-Date: 2018-02-21 14:14+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -18,175 +18,175 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Poedit 1.8.7.1\n"
 
-#: models.py:89 templates/coopfaceonline/CFDecision.html:31
+#: models.py:90
 msgid "Left"
 msgstr "Gauche"
 
-#: models.py:89 templates/coopfaceonline/CFDecision.html:34
+#: models.py:90
 msgid "Right"
 msgstr "Droite"
 
-#: models.py:102
+#: models.py:103
 msgid "What nationality are you?"
 msgstr "Quelle est votre nationalité?"
 
-#: models.py:144
+#: models.py:145
 msgid "How old are you?"
 msgstr "Quel âge avez-vous?"
 
-#: models.py:147
+#: models.py:148
 msgid "Female"
 msgstr "Femme"
 
-#: models.py:147
+#: models.py:148
 msgid "Male"
 msgstr "Homme"
 
-#: models.py:148
+#: models.py:149
 msgid "What is your gender?"
 msgstr "Quel est votre genre?"
 
-#: models.py:151 models.py:172 models.py:181
+#: models.py:152 models.py:173 models.py:182
 msgid "No"
 msgstr "Non"
 
-#: models.py:151 models.py:172 models.py:181
+#: models.py:152 models.py:173 models.py:182
 msgid "Yes"
 msgstr "Oui"
 
-#: models.py:152
+#: models.py:153
 msgid "Are you a student?"
 msgstr "Êtes-vous étudiant(e)?"
 
-#: models.py:155
+#: models.py:156
 msgid "Bachelor"
 msgstr "Licence"
 
-#: models.py:155
+#: models.py:156
 msgid "Master"
 msgstr "Master"
 
-#: models.py:156
+#: models.py:157
 msgid "PhD"
 msgstr "Doctorat"
 
-#: models.py:156 models.py:168
+#: models.py:157 models.py:169
 msgid "Not in the list"
 msgstr "Pas dans la liste"
 
-#: models.py:157
+#: models.py:158
 msgid "What is your level of study"
 msgstr "Quel est votre niveau d'étude?"
 
-#: models.py:160
+#: models.py:161
 msgid "Administration"
 msgstr "Administration"
 
-#: models.py:160
+#: models.py:161
 msgid "Archeology"
 msgstr "Archéologie"
 
-#: models.py:160
+#: models.py:161
 msgid "Biology"
 msgstr "Biologie"
 
-#: models.py:161
+#: models.py:162
 msgid "Buisiness school"
 msgstr "Ecole de commerce"
 
-#: models.py:161
+#: models.py:162
 msgid "Chemistry"
 msgstr "Chimie"
 
-#: models.py:162 tests.py:110
+#: models.py:163 tests.py:110
 msgid "Computer science"
 msgstr "Informatique"
 
-#: models.py:162 tests.py:108
+#: models.py:163 tests.py:108
 msgid "Economics"
 msgstr "Economie"
 
-#: models.py:163
+#: models.py:164
 msgid "Education"
 msgstr "Education"
 
-#: models.py:163 tests.py:108
+#: models.py:164 tests.py:108
 msgid "Law"
 msgstr "Droit"
 
-#: models.py:163
+#: models.py:164
 msgid "Management"
 msgstr "Gestion"
 
-#: models.py:164
+#: models.py:165
 msgid "Nursing school"
 msgstr "Ecole d'infirmière"
 
-#: models.py:164
+#: models.py:165
 msgid "Engineer"
 msgstr "Ecole d'ingénieur"
 
-#: models.py:164
+#: models.py:165
 msgid "Geography"
 msgstr "Géographie"
 
-#: models.py:165
+#: models.py:166
 msgid "History"
 msgstr "Histoire"
 
-#: models.py:165
+#: models.py:166
 msgid "Lettres"
 msgstr "Lettres"
 
-#: models.py:165
+#: models.py:166
 msgid "Mathematics"
 msgstr "Mathématiques"
 
-#: models.py:166 tests.py:109
+#: models.py:167 tests.py:109
 msgid "Medicine"
 msgstr "Médecine"
 
-#: models.py:166
+#: models.py:167
 msgid "Music"
 msgstr "Musique"
 
-#: models.py:166
+#: models.py:167
 msgid "Pharmacy"
 msgstr "Pharmacie"
 
-#: models.py:167
+#: models.py:168
 msgid "Philosophy"
 msgstr "Phylosophie"
 
-#: models.py:167
+#: models.py:168
 msgid "Physics"
 msgstr "Physique"
 
-#: models.py:167
+#: models.py:168
 msgid "Politics"
 msgstr "Sciences politiques"
 
-#: models.py:168
+#: models.py:169
 msgid "Sociology"
 msgstr "Sociologie"
 
-#: models.py:168
+#: models.py:169
 msgid "Sport"
 msgstr "Sport"
 
-#: models.py:170
+#: models.py:171
 msgid "What are you studying ? / What did you study?"
 msgstr "Quelle discipline avez-vous étudié / étudiez-vous?"
 
-#: models.py:173
+#: models.py:174
 msgid "Do you benefit from a scholarship?"
 msgstr "Bénéficiez-vous d'une bourse sur critères sociaux?"
 
-#: models.py:178
+#: models.py:179
 msgid "If you benefit a scholarship, what is its level?"
 msgstr "Si vous bénéficiez d'une bourse sur critères sociaux, à quel échelon?"
 
-#: models.py:182
+#: models.py:183
 msgid "Did you recognize one individual on the pictures?"
 msgstr "Connaissez-vous un des individus qui étaient sur les photos?"
 
@@ -219,8 +219,7 @@ msgstr ""
 "Veuillez selectionner l'individu avec lequel vous souhaitez interagir, "
 "sachant que vous placez %(contrib)s jetons dans le compte collectif."
 
-#: templates/coopfaceonline/CFDecision.html:27
-#: templates/coopfaceonline/CFDecision.html:38
+#: templates/coopfaceonline/CFDecision.html:22
 msgid "Which player do you want to interact with?"
 msgstr "Avec quel individu souhaitez-vous interagir?"
 

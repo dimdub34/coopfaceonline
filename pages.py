@@ -99,12 +99,20 @@ class CFDecision(Page):
             self.player.participant.vars["CF_defectors"][self.round_number-1]
         self.player.CF_cooperator_on_left = \
             self.player.participant.vars["CF_left_is_coop"][self.round_number-1]
-        return {
-            "coop_pic": "coopfaceonline/{}.JPG".format(self.player.CF_cooperator),
-            "noncoop_pic": "coopfaceonline/{}.JPG".format(
-                self.player.CF_defector),
-            "left_is_coop" : self.player.CF_cooperator_on_left  # just to see it during the demo
-        }
+
+        print(self.player.CF_cooperator_on_left)
+        if self.player.CF_cooperator_on_left:
+            return {
+                "img_left": "coopfaceonline/{}.JPG".format(self.player.CF_cooperator),
+                "img_right": "coopfaceonline/{}.JPG".format(self.player.CF_defector),
+                "coop_on_left": 1
+            }
+        else:
+            return {
+                "img_left": "coopfaceonline/{}.JPG".format(self.player.CF_defector),
+                "img_right": "coopfaceonline/{}.JPG".format(self.player.CF_cooperator),
+                "coop_on_left": 0
+            }
 
     def before_next_page(self):
         for p in self.group.get_players():

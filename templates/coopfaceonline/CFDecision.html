@@ -14,13 +14,8 @@
     </p>
     <table>
         <tr>
-            {% if self.player.CF_cooperator_on_left %}
-                <td><img src="{% static coop_pic %}" width="450px" /></td>
-                <td><img src="{% static noncoop_pic %}" width="450px"/></td>
-            {% else %}
-                <td><img src="{% static noncoop_pic %}" width="450px"/></td>
-                <td><img src="{% static coop_pic %}" width="450px" /></td>
-            {% endif %}
+            <td><img src="{% static img_left %}" width="450px" /></td>
+            <td><img src="{% static img_right %}" width="450px"/></td>
         </tr>
         <tr>
             <td colspan="2" style="text-align: center;">
@@ -28,15 +23,11 @@
             </td>
         </tr>
         <tr>
-            <!--<td style="text-align: center;"><strong>{% trans "Left" %}</strong></td>-->
             <td style="text-align: center;"><strong>{{ form.CF_choice.0 }}</strong></td>
             <td style="text-align: center;"><strong>{{ form.CF_choice.1 }}</strong></td>
-            <!--<td style="text-align: center;"><strong>{% trans "Right" %}</strong></td>-->
         </tr>
     </table>
     <p>&nbsp;</p>
-    <!--{% trans "Which player do you want to interact with?" %}
-    {% formfield player.CF_choice label="" %}-->
 
     {% next_button %}
 
