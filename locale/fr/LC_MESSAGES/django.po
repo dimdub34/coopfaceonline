@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-20 18:22+0100\n"
-"PO-Revision-Date: 2018-02-20 18:23+0100\n"
+"POT-Creation-Date: 2018-02-21 14:12+0100\n"
+"PO-Revision-Date: 2018-02-21 14:14+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -46,11 +46,11 @@ msgstr "Homme"
 msgid "What is your gender?"
 msgstr "Quel est votre genre?"
 
-#: models.py:151 models.py:172
+#: models.py:151 models.py:172 models.py:181
 msgid "No"
 msgstr "Non"
 
-#: models.py:151 models.py:172
+#: models.py:151 models.py:172 models.py:181
 msgid "Yes"
 msgstr "Oui"
 
@@ -186,13 +186,17 @@ msgstr "Bénéficiez-vous d'une bourse sur critères sociaux?"
 msgid "If you benefit a scholarship, what is its level?"
 msgstr "Si vous bénéficiez d'une bourse sur critères sociaux, à quel échelon?"
 
-#: pages.py:24
+#: models.py:182
+msgid "Did you recognize one individual on the pictures?"
+msgstr "Connaissez-vous un des individus qui étaient sur les photos?"
+
+#: pages.py:26
 msgid "If you are a student you must tell if you benefit from a scholarship."
 msgstr ""
 "Si vous êtes étudiant(e), vous devez préciser si vous bénéficiez ou non "
 "d'une bourse."
 
-#: pages.py:28
+#: pages.py:30
 msgid "If you benefit a scholarship you have to specify its level."
 msgstr ""
 "Si vous bénéficiez d'une bourse sur critères sociaux, vous devez préciser "
