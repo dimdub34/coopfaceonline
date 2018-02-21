@@ -181,6 +181,9 @@ class Player(BasePlayer):
         choices=[(0, ugettext('No')), (1, ugettext('Yes'))],
         label=ugettext("Did you recognize one individual on the pictures?"),
         widget=widgets.RadioSelectHorizontal)
+    hidden_screen_height = models.IntegerField()
+    hidden_screen_width = models.IntegerField()
+    hidden_play_on_mobile = models.IntegerField()
     comments = models.LongStringField(blank=True)
 
     def set_cf_period_payoff(self):

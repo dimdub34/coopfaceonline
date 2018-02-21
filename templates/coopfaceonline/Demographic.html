@@ -11,8 +11,14 @@
 {% trans "The questionnaire below is anonymous, so please answer sincerely" %}
 
     {% for field in form %}
-        {% formfield field %}
+        {% if "hidden" not in field.name %}
+            {% formfield field %}
+        {% endif %}
     {% endfor %}
+
+    <input type="hidden" name="hidden_screen_height" id="id_hidden_screen_height" />
+    <input type="hidden" name="hidden_screen_width" id="id_hidden_screen_width" />
+    <input type="hidden" name="hidden_play_on_mobile" id="id_hidden_play_on_mobile" />
 
     {% next_button %}
 
@@ -39,6 +45,7 @@
                 scholar_no.prop("disabled", false);
                 scholar_yes.prop("disabled", false);
             });
+
             // enable/disable scholar_level depending on scholar answer
             var scholar_level = $("#id_student_scholarship_level");
             scholar_level.prop("disabled", true);
@@ -48,6 +55,15 @@
             scholar_yes.click(function() {
                 scholar_level.prop("disabled", false);
             });
+
+            // hidden values
+            $("#id_hidden_screen_height").val(screen.height);
+            $("#id_hidden_screen_width").val(screen.width);
+            if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+                $("#id_hidden_play_on_mobile").val(1);
+            } else {
+                $("#id_hidden_play_on_mobile").val(0);
+            }
         }
     </script>
 
