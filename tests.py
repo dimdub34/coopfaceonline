@@ -110,6 +110,7 @@ class PlayerBot(Bot):
                             ugettext("Computer science")]),
                        "student_scholarship": random.randint(0, 1),
                        "student_scholarship_level": random.choice(
-                           ["0", "0 bis", "1", "2", "3", "4", "5", "6", "7"])
+                           ["0", "0 bis", "1", "2", "3", "4", "5", "6", "7"]),
+                       "known_individual": random.randint(0, 1)
                    })
             yield (pages.Final, {"comments": "Automatic message"})

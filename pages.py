@@ -14,7 +14,7 @@ class Demographic(Page):
     form_model = "player"
     form_fields = ["nationality", "age", "gender", "student", "student_level",
                    "student_discipline", "student_scholarship",
-                   "student_scholarship_level"]
+                   "student_scholarship_level", "known_individual"]
 
     def is_displayed(self):
         return self.round_number == Constants.num_rounds

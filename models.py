@@ -177,6 +177,10 @@ class Player(BasePlayer):
             "0", "0 bis", "1", "2", "3", "4", "5", "6", "7"],
         label=ugettext("If you benefit a scholarship, what is its level?"),
         blank=True)
+    known_individual = models.IntegerField(
+        choices=[(0, ugettext('No')), (1, ugettext('Yes'))],
+        label=ugettext("Did you recognize one individual on the pictures?"),
+        widget=widgets.RadioSelectHorizontal)
     comments = models.LongStringField(blank=True)
 
     def set_cf_period_payoff(self):
